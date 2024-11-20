@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO Пакети</title>
+    <title>Ценови пакети за SEO услуги</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,17 +14,17 @@
         }
         header {
             background-color: #0078D7;
-            color: #fff;
+            color: white;
             padding: 20px;
             text-align: center;
         }
         main {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
+            border-radius: 8px;
         }
         h1, h2 {
             color: #0078D7;
@@ -36,7 +36,7 @@
             border-radius: 5px;
             background-color: #f7f7f7;
         }
-        .package h3 {
+        .package h2 {
             margin-top: 0;
         }
         .price {
@@ -48,71 +48,101 @@
             text-align: center;
             padding: 10px 0;
             background-color: #0078D7;
-            color: #fff;
+            color: white;
             margin-top: 20px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #0078D7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056A6;
+        }
+        .captcha {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .captcha img {
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>SEO Пакети</h1>
-        <p>Изберете най-подходящия пакет за Вашия бизнес</p>
+        <h1>Ценови пакети за SEO услуги</h1>
     </header>
     <main>
+        <!-- SEO Packages -->
         <div class="package">
             <h2>Пакет 1: Основен</h2>
             <p><strong>Подходящ за:</strong> Малки уебсайтове или стартиращи бизнеси с ограничен бюджет.</p>
             <ul>
-                <li>Първоначален SEO одит</li>
-                <li>Проучване на ключови думи (до 10)</li>
-                <li>On-Page оптимизация</li>
-                <li>Link-Building: Фондационни линкове (5)</li>
-                <li>Месечен отчет</li>
+                <li>Първоначален SEO одит: Анализ на техническото състояние на сайта.</li>
+                <li>Проучване на ключови думи: До 10 ключови думи.</li>
+                <li>On-Page оптимизация, включително изображения и мета данни.</li>
+                <li>Техническа оптимизация: Скорост, SSL сертификат.</li>
+                <li>Link-Building: 5 фондационни линка.</li>
+                <li>Месечен отчет.</li>
             </ul>
             <p class="price">Цена: XX лв./месец</p>
         </div>
-
         <div class="package">
             <h2>Пакет 2: Стандартен</h2>
             <p><strong>Подходящ за:</strong> Развиващи се бизнеси.</p>
             <ul>
-                <li>Всички услуги от Основния пакет</li>
-                <li>Проучване на ключови думи (до 30)</li>
-                <li>Създаване на съдържание (2 статии месечно)</li>
-                <li>Link-Building: Фондационни линкове (10), Социални линкове, Директории (5)</li>
-                <li>Локално SEO</li>
-                <li>Месечен отчет</li>
+                <li>Всички услуги от Основния пакет.</li>
+                <li>Проучване на до 30 ключови думи.</li>
+                <li>Създаване на съдържание: 2 статии месечно.</li>
+                <li>Link-Building: Социални линкове, 10 фондационни линка, 5 директории.</li>
+                <li>Локално SEO и Google My Business профил.</li>
+                <li>Месечен отчет.</li>
             </ul>
             <p class="price">Цена: XX лв./месец</p>
         </div>
+        <!-- More packages here -->
+        
+        <!-- Contact Form -->
+        <h2>Свържете се с нас</h2>
+        <form action="YOUR_BACKEND_URL" method="POST">
+            <label for="name">Вашето име</label>
+            <input type="text" id="name" name="name" required>
 
-        <div class="package">
-            <h2>Пакет 3: Премиум</h2>
-            <p><strong>Подходящ за:</strong> Средни и големи компании.</p>
-            <ul>
-                <li>Всички услуги от Стандартния пакет</li>
-                <li>Проучване на ключови думи (до 50)</li>
-                <li>Създаване на съдържание (4 статии месечно)</li>
-                <li>Link-Building: Фондационни линкове (15), Гост публикации (2), Директории (10)</li>
-                <li>Техническа оптимизация: Schema Markup</li>
-                <li>Седмичен отчет</li>
-            </ul>
-            <p class="price">Цена: XX лв./месец</p>
-        </div>
+            <label for="email">Вашият имейл</label>
+            <input type="email" id="email" name="email" required>
 
-        <div class="package">
-            <h2>Пакет 4: Ексклузивен</h2>
-            <p><strong>Подходящ за:</strong> Големи компании с амбиции за водещи позиции.</p>
-            <ul>
-                <li>Всички услуги от Премиум пакета</li>
-                <li>Проучване на ключови думи (100+)</li>
-                <li>Създаване на съдържание (8 статии месечно)</li>
-                <li>Link-Building: Фондационни линкове (20), Гост публикации (5), Директории (20)</li>
-                <li>PPC реклама</li>
-                <li>Дневен мониторинг</li>
-            </ul>
-            <p class="price">Цена: XX лв./месец (по договаряне)</p>
-        </div>
+            <label for="message">Съобщение</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <div class="captcha">
+                <img src="captcha.png" alt="Captcha" id="captcha-img">
+                <input type="text" id="captcha" name="captcha" placeholder="Въведете кода" required>
+            </div>
+
+            <button type="submit">Изпратете</button>
+        </form>
     </main>
     <footer>
         <p>&copy; 2024 SEO Agency. Всички права запазени.</p>
