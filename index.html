@@ -161,7 +161,23 @@
         
       <h2>Свържете се с нас</h2>
      
+<form id="contactForm">
+    <label for="name">Вашето име</label>
+    <input type="text" id="name" name="name" required>
 
+    <label for="email">Вашият имейл</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Съобщение</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <div class="captcha">
+        <img src="captcha.png" alt="Captcha" id="captcha-img">
+        <input type="text" id="captcha" name="captcha" placeholder="Въведете кода" required>
+    </div>
+
+    <button type="submit">Изпратете</button>
+</form>
 
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
