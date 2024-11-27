@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Разгледайте нашите специализирани услуги за оптимизация, поддръжка и създаване на уебсайтове. Подобрете ефективността и видимостта на вашия бизнес с професионалните решения на BulgarSolution.">
+    <title>Нашите Допълнителни услуги - BulgarSolution СЕО</title>
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+  background: linear-gradient(90deg, #ececec, white, #ececec); /* Gradient */
+            color: #333;
+        }
+        header {
+          background-color: #0078D7;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+          header img {
+            height: 50px;
+        }
+
+header img, .package img {
+    transition: transform 0.5s ease, filter 0.5s ease; /* Adds transition for smooth animation */
+}
+
+header img:hover, .package img:hover {
+    transform: scale(1.1); /* Zoom-in effect */
+    filter: brightness(1.1); /* Optional: increases brightness on hover */
+}
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+  color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.5s ease, transform 0.5s ease; /* Added transform */
+        }
+        nav a:hover {
+       background-color: #0056A6;
+    transform: scale(1.1); /* Slightly enlarges the link on hover */
+        }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #0078D7;
+        }
+      .package {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition for smooth fade-in */
+    transform: translateY(-12px); /* Initially position them slightly above */
+}
+
+.package.visible {
+    opacity: 1;
+    transform: translateY(0); /* Return to normal position */
+}
+
+.package:nth-child(1) {
+    animation-delay: 0s; /* First package, no delay */
+}
+.package:nth-child(2) {
+    animation-delay: 0.5s; /* 0.5s delay for the second package */
+}
+.package:nth-child(3) {
+    animation-delay: 1s; /* 1s delay for the third package */
+}
+.package:nth-child(4) {
+    animation-delay: 1.5s; /* 1.5s delay for the fourth package */
+}
+        .package h2 {
+            margin-top: 0;
+        }
+        .price {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #0078D7;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+          background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient */
+            color: white;
+            margin-top: 20px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+
+      
+
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        
+       @keyframes popInOut {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.2); /* Pops in (scales up) */
+    }
+}
+
+form button {
+    background-color: #0078D7;
+    max-width:50%; text-align:center; margin-left:auto; margin-right:auto;
+    color: white;
+    border: none;
+    cursor: pointer;
+    animation: popInOut 3.5s infinite; /* Apply pop-in and pop-out animation */
+    display: inherit;
+}
+        form button:hover {
+            background-color: #0056A6;
+        }
+        .captcha {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .captcha img {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .captcha input {
+            flex-grow: 1;
+        }
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    main {
+        padding: 10px;
+    }
+    form button {
+        max-width: 100%; /* Full-width button on mobile */
+    }
+    .package {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .package {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+    .package h2 {
+        font-size: 1.2em;
+    }
+    .price {
+        font-size: 1em;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+<header>
+        <a href="index.html" title="Към началната страница"><img src="bs-logo.webp" alt="BulgarSolution SEO Agency Logo"></a>
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="services.html"><strong>Услуги</strong></a>
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакт</a>
+        </nav>
+    </header>
+    <main>
+         <h1 class="lazy-load">Нашите SEO и дигитални услуги</h1>
+    <div class="package lazy-load">
+        <h2>Оптимизация на скоростта на уебсайта</h2>
+        <p>Подобрете времето за зареждане на вашия сайт за по-добро потребителско изживяване и по-високи позиции в търсачките.</p>
+        <p class="price">Цена: 120-300 лв. (в зависимост от сложността на сайта)</p>
+    </div>
+    <div class="package lazy-load">
+        <h2>Добавяне на мета данни</h2>
+        <p>Оптимизация на заглавията и описанията за всички страници, продукти или проекти.</p>
+        <p class="price">Цена: По договаряне (зависи от броя на страниците)</p>
+    </div>
+    <div class="package lazy-load">
+        <h2>Добавяне на Alt и Title на изображения</h2>
+        <p>Автоматично или ръчно добавяне на SEO Alt и Title атрибути към изображения за подобрена видимост в Google Images.</p>
+        <ul>
+            <li><strong>Автоматично добавяне:</strong> 50 лв./10 изображения</li>
+            <li><strong>Ръчно добавяне:</strong> 200 лв./10 изображения</li>
+        </ul>
+    </div>
+    <div class="package lazy-load">
+        <h2>Проучване на ключови думи (Keyword Research)</h2>
+        <p>Извършване на детайлен анализ за най-ефективните ключови думи за вашия бизнес.</p>
+        <p class="price">Цена: 150-300 лв. (в зависимост от нишата)</p>
+    </div>
+    <div class="package lazy-load">
+        <h2>Промяна на съдържание със SEO насоченост</h2>
+        <p>Актуализиране на текстове, за да отговарят на целевите ключови думи и SEO изисквания.</p>
+        <p class="price">Цена: 25-35 лв./час</p>
+    </div>
+    <div class="package lazy-load">
+        <h2>Създаване на съдържание</h2>
+        <p>Писане на статии, блог постове и страници, оптимизирани за SEO.</p>
+        <p class="price">Цена: 100-200 лв./1000 думи</p>
+    </div>
+    <div class="package lazy-load">
+        <h2>On-Page и Off-Page Link-Building</h2>
+        <p>Изграждане на вътрешни и външни линкове за подобряване на вашия сайт.</p>
+        <p class="price">Цена: По договаряне</p>
+    </div>
+    <div class="package lazy-load">
+        <h2>Управление на Google и Meta Ads</h2>
+        <p>Създаване и поддръжка на рекламни кампании в Google Ads, Facebook и Instagram.</p>
+        <ul>
+            <li>Създаване на реклами: 150 лв./кампания</li>
+            <li>Поддръжка на кампании: 100-200 лв./месец</li>
+        </ul>
+    </div>
+    <div class="package lazy-load">
+        <h2>Изработка и поддръжка на уебсайтове</h2>
+        <ul>
+            <li>Създаване на уебсайт: от 800 лв.</li>
+            <li>Поддръжка: 150-300 лв./месец</li>
+        </ul>
+    </div>
+    <div class="package lazy-load">
+        <h2>Други услуги</h2>
+        <ul>
+            <li>Превод на уебсайт: 0.12 лв./дума</li>
+            <li>SEO за преведени страници: от 200 лв.</li>
+            <li>Поддръжка на социални мрежи: от 300 лв./месец</li>
+            <li>Създаване на имейл кампании: 150-250 лв.</li>
+            <li>Разработка на персонализирани плъгини: По договаряне</li>
+            <li>Добавяне на нови функционалности: По договаряне</li>
+        </ul>
+    </div>
+        <!-- More packages here -->
+        
+      <h2 class="lazy-load">Свържете се с нас</h2>
+     
+<form id="contactForm" class="lazy-load">
+    <label for="name">Вашето име</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Вашият имейл</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Съобщение</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+  
+    <button type="submit">Изпрати Запитване Сега</button>
+</form>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your Public Key
+    emailjs.init("RSVKpDYIgHxe2xtCg"); // Replace with your actual Public Key
+
+    // Handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent the default form submission
+
+        // Send the form data using EmailJS
+        emailjs.sendForm("emailj-com", "template_owhdkc8", this)
+            .then(function(response) {
+                alert("Вашето съобщение беше изпратено успешно!");
+            }, function(error) {
+                alert("Възникна грешка. Моля, опитайте отново.");
+                console.error("EmailJS Error:", error);
+            });
+    });
+</script>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>&copy; 2024 BulgarSolution SEO. Всички права запазени.</p>
+    </footer>
+
+<script>
+// Intersection Observer to detect when package divs enter the viewport
+document.addEventListener('DOMContentLoaded', function () {
+    const packages = document.querySelectorAll('.package'); // Select all packages
+
+    // Options for the Intersection Observer
+    const options = {
+        root: null, // Viewport as the root
+        rootMargin: '0px', // No margin offset
+        threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    // Callback function for when an element enters the viewport
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add 'visible' class to the element to trigger the fade-in animation
+                entry.target.classList.add('visible');
+                // Stop observing the element after it's visible
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(callback, options);
+
+    // Observe each package
+    packages.forEach(packageDiv => {
+        observer.observe(packageDiv);
+    });
+});
+</script>
+</body>
+</html>
