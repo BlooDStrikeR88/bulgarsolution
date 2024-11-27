@@ -90,9 +90,25 @@ header img:hover, .package img:hover {
             animation: fadeIn 1s ease-in-out;
         }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
+            from { opacity: 0; transform: translateY(-12px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+
+        .package:nth-child(1) {
+    animation-delay: 0s;
+}
+.package:nth-child(2) {
+    animation-delay: 0.5s; /* Delay second package by 0.5s */
+}
+.package:nth-child(3) {
+    animation-delay: 1s; /* Delay third package by 1s */
+}
+.package:nth-child(4) {
+    animation-delay: 1.5s; /* Delay fourth package by 1.5s */
+}
+
+
         form label {
             display: block;
             margin-bottom: 5px;
