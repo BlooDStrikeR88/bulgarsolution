@@ -59,14 +59,34 @@ header img:hover, .package img:hover {
         h1, h2 {
             color: #0078D7;
         }
-        .package {
-            border: 1px solid #ddd;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            background-color: #f7f7f7;
-                animation: fadeIn 1s ease-in-out;
-        }
+      .package {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition for smooth fade-in */
+    transform: translateY(-12px); /* Initially position them slightly above */
+}
+
+.package.visible {
+    opacity: 1;
+    transform: translateY(0); /* Return to normal position */
+}
+
+.package:nth-child(1) {
+    animation-delay: 0s; /* First package, no delay */
+}
+.package:nth-child(2) {
+    animation-delay: 0.5s; /* 0.5s delay for the second package */
+}
+.package:nth-child(3) {
+    animation-delay: 1s; /* 1s delay for the third package */
+}
+.package:nth-child(4) {
+    animation-delay: 1.5s; /* 1.5s delay for the fourth package */
+}
         .package h2 {
             margin-top: 0;
         }
@@ -95,18 +115,7 @@ header img:hover, .package img:hover {
         }
 
 
-        .package:nth-child(1) {
-    animation-delay: 0s;
-}
-.package:nth-child(2) {
-    animation-delay: 0.5s; /* Delay second package by 0.5s */
-}
-.package:nth-child(3) {
-    animation-delay: 1s; /* Delay third package by 1s */
-}
-.package:nth-child(4) {
-    animation-delay: 1.5s; /* Delay fourth package by 1.5s */
-}
+      
 
 
         form label {
@@ -172,7 +181,7 @@ form button {
     <main>
         <h1>Ценови пакети за SEO услуги</h1>
         <!-- SEO Packages -->
-        <div class="package">
+        <div class="package lazy-load">
             <h2>Пакет 1: Основен</h2>
             <p><strong>Подходящ за:</strong> Малки уебсайтове или стартиращи бизнеси с ограничен бюджет.</p>
             <ul>
@@ -185,7 +194,7 @@ form button {
             </ul>
             <p class="price">Цена: XX лв./месец</p>
         </div>
-        <div class="package">
+        <div class="package lazy-load">
             <h2>Пакет 2: Стандартен</h2>
             <p><strong>Подходящ за:</strong> Развиващи се бизнеси.</p>
             <ul>
@@ -200,7 +209,7 @@ form button {
         </div>
 
 
-         <div class="package">
+         <div class="package lazy-load">
             <h2>Пакет 3: Премиум</h2>
             <p><strong>Подходящ за:</strong> Средни и големи компании.</p>
             <ul>
@@ -214,7 +223,7 @@ form button {
             <p class="price">Цена: XX лв./месец</p>
         </div>
 
-        <div class="package">
+        <div class="package lazy-load">
             <h2>Пакет 4: Ексклузивен</h2>
             <p><strong>Подходящ за:</strong> Големи компании с амбиции за водещи позиции.</p>
             <ul>
@@ -273,5 +282,39 @@ form button {
     <footer>
         <p>&copy; 2024 SEO Agency. Всички права запазени.</p>
     </footer>
+
+<script>
+// Intersection Observer to detect when package divs enter the viewport
+document.addEventListener('DOMContentLoaded', function () {
+    const packages = document.querySelectorAll('.package'); // Select all packages
+
+    // Options for the Intersection Observer
+    const options = {
+        root: null, // Viewport as the root
+        rootMargin: '0px', // No margin offset
+        threshold: 0.1, // Trigger when 10% of the element is visible
+    };
+
+    // Callback function for when an element enters the viewport
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Add 'visible' class to the element to trigger the fade-in animation
+                entry.target.classList.add('visible');
+                // Stop observing the element after it's visible
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(callback, options);
+
+    // Observe each package
+    packages.forEach(packageDiv => {
+        observer.observe(packageDiv);
+    });
+});
+</script>
 </body>
 </html>
