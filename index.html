@@ -13,10 +13,30 @@
             color: #333;
         }
         header {
-            background-color: #0078D7;
+          background-color: #0078D7;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+          header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #0056A6;
         }
         main {
             max-width: 1000px;
@@ -56,6 +76,11 @@
             padding: 20px;
             background-color: #f7f7f7;
             border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         form label {
             display: block;
@@ -88,13 +113,23 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+        .captcha input {
+            flex-grow: 1;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ценови пакети за SEO услуги</h1>
+<header>
+        <img src="logo.png" alt="SEO Agency Logo">
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакт</a>
+        </nav>
     </header>
     <main>
+        <h1>Ценови пакети за SEO услуги</h1>
         <!-- SEO Packages -->
         <div class="package">
             <h2>Пакет 1: Основен</h2>
@@ -124,25 +159,34 @@
         </div>
         <!-- More packages here -->
         
-        <!-- Contact Form -->
-        <h2>Свържете се с нас</h2>
-        <form action="YOUR_BACKEND_URL" method="POST">
-            <label for="name">Вашето име</label>
-            <input type="text" id="name" name="name" required>
+      <h2>Свържете се с нас</h2>
+     
 
-            <label for="email">Вашият имейл</label>
-            <input type="email" id="email" name="email" required>
 
-            <label for="message">Съобщение</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    // Initialize EmailJS with your Public Key
+    emailjs.init("RSVKpDYIgHxe2xtCg"); // Replace with your actual Public Key
 
-            <div class="captcha">
-                <img src="captcha.png" alt="Captcha" id="captcha-img">
-                <input type="text" id="captcha" name="captcha" placeholder="Въведете кода" required>
-            </div>
+    // Handle form submission
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent the default form submission
 
-            <button type="submit">Изпратете</button>
-        </form>
+        // Send the form data using EmailJS
+        emailjs.sendForm("emailj-com", "template_owhdkc8", this)
+            .then(function(response) {
+                alert("Вашето съобщение беше изпратено успешно!");
+            }, function(error) {
+                alert("Възникна грешка. Моля, опитайте отново.");
+                console.error("EmailJS Error:", error);
+            });
+    });
+</script>
+
+
+
+
+
     </main>
     <footer>
         <p>&copy; 2024 SEO Agency. Всички права запазени.</p>
