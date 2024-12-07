@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Portfolio</title>
+    <title>Bulgar Solution - Уеб Услуги</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -33,11 +32,21 @@
             font-size: 1.2rem;
             color: #ddd;
         }
+        .hero-slider-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            padding: 20px;
+        }
         .hero-slider {
             position: relative;
-            width: 100%;
-            height: calc(100vw / 3); /* 30:9 Aspect Ratio */
+            width: 80%; /* Adjust this width to control the size of the banner */
+            max-width: 1000px; /* Limit the maximum size */
+            height: 562.5px; /* Aspect ratio of 16:9 */
             overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .hero-slider img {
             width: 100%;
@@ -49,6 +58,42 @@
         }
         .hero-slider img.active {
             opacity: 1;
+        }
+        .slider-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: #ffdf6c;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s;
+        }
+        .slider-button:hover {
+            background: #f4c542;
+            color: #000;
+        }
+        .about-us {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .about-us h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffdf6c;
+        }
+        .about-us p {
+            font-size: 1.2rem;
+            color: #ddd;
+            line-height: 1.6;
         }
         .portfolio-container {
             display: flex;
@@ -97,45 +142,6 @@
             background: #007bff;
             color: #fff;
         }
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            animation: fadeIn 0.5s;
-        }
-        .modal-content {
-            position: relative;
-            max-width: 90%;
-            max-height: 90%;
-            animation: zoomIn 0.5s;
-        }
-        .modal-content img {
-            width: 100%;
-        }
-        .modal-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #fff;
-            color: #333;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 16px;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-        .modal-close:hover {
-            background: #333;
-            color: #fff;
-        }
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -154,46 +160,53 @@
                 transform: translateY(0);
             }
         }
-        @keyframes zoomIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
     </style>
 </head>
 <body>
 <header>
-    <h1>Моето Портфолио</h1>
-    <p>Дизайн на уебсайтове | Поддръжка | SEO оптимизация</p>
+   
+    
+    <h1>Bulgar Solution</h1>
+ <p>Професионални уеб услуги за българския пазар</p>
+     <a href="index.html" title="Към началната страница"><img src="bs-logo.webp" alt="BulgarSolution SEO Agency Logo"></a>
+        <nav>
+            <a href="index.html"><strong>Начало</strong></a>
+            <a href="services.html">Услуги</a>
+            <a href="about.html" class="activepage">За нас</a>
+            <a href="contact.html">Контакт</a>
+        </nav>
 </header>
 
-<div class="hero-slider" id="hero-slider">
-    <img src="slider1.webp" alt="Slider Image 1" class="active">
-    <img src="slider2.webp" alt="Slider Image 2">
-    <img src="slider1.webp" alt="Slider Image 3-1">
+<div class="hero-slider-container">
+    <div class="hero-slider" id="hero-slider">
+        <img src="slider1.webp" alt="Слайдер изображение 1" class="active">
+        <img src="slider2.webp" alt="Слайдер изображение 2">
+        <img src="slider3.webp" alt="Слайдер изображение 3">
+        <a href="/contact.html" class="slider-button">Свържете се с нас</a>
+    </div>
+</div>
+
+<div class="about-us">
+    <h2>За нас</h2>
+    <p>Ние сме "Bulgar Solution" – компания, специализирана в създаването и поддръжката на уебсайтове. Предлагаме услуги като изграждане на HTML и WordPress сайтове, SEO оптимизация, техническа поддръжка и други уеб решения. Нашата мисия е да предоставим висококачествени услуги, които да отговорят на нуждите на бизнеса в България.</p>
 </div>
 
 <div class="portfolio-container">
     <div class="portfolio-item">
-        <img src="project1-thumbnail.jpg" alt="Проект 1" onclick="openModal('project1.jpg', 'https://example.com/project1')">
+        <img src="project1-thumbnail.jpg" alt="Проект 1">
         <a href="https://example.com/project1" target="_blank">Виж сайта</a>
     </div>
     <div class="portfolio-item">
-        <img src="project2-thumbnail.jpg" alt="Проект 2" onclick="openModal('project2.jpg', 'https://example.com/project2')">
+        <img src="project2-thumbnail.jpg" alt="Проект 2">
         <a href="https://example.com/project2" target="_blank">Виж сайта</a>
     </div>
-    <!-- Add more projects as needed -->
-</div>
-
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <button class="modal-close" onclick="closeModal()">Затвори</button>
-        <img id="modal-img" src="" alt="">
+    <div class="portfolio-item">
+        <img src="project3-thumbnail.jpg" alt="Проект 3">
+        <a href="https://example.com/project3" target="_blank">Виж сайта</a>
+    </div>
+    <div class="portfolio-item">
+        <img src="project4-thumbnail.jpg" alt="Проект 4">
+        <a href="https://example.com/project4" target="_blank">Виж сайта</a>
     </div>
 </div>
 
@@ -207,19 +220,6 @@
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
     }, 3000);
-
-    // Modal functionality
-    function openModal(imageSrc, url) {
-        const modal = document.getElementById('modal');
-        const modalImg = document.getElementById('modal-img');
-        modalImg.src = imageSrc;
-        modal.style.display = 'flex';
-    }
-
-    function closeModal() {
-        const modal = document.getElementById('modal');
-        modal.style.display = 'none';
-    }
 </script>
 </body>
 </html>
