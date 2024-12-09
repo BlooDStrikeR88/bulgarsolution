@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свържете се с нас - BulgarSolution</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1f1c2c, #928dab);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeIn 2s;
+        }
+        header img {
+            height: 50px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+        nav a:hover {
+            background-color: #0056A6;
+            transform: scale(1.1);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #ffdf6c;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            color: #f4b400;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        form label {
+            font-size: 1.2rem;
+            color: #ffdf6c;
+        }
+
+        form input, form textarea, form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form input, form textarea {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        form button {
+            background: #0078D7;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        form button:hover {
+            background: #0056A6;
+            transform: scale(1.05);
+        }
+
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .faq {
+            background: rgba(0, 0, 0, 0.5);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .faq:hover {
+            transform: scale(1.02);
+        }
+
+        .faq h3 {
+            margin: 0;
+            color: #ffdf6c;
+            font-size: 1.5rem;
+        }
+
+        .faq p {
+            margin-top: 10px;
+            display: none;
+            color: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+        }
+
+      .activepage{background-color: #429fff59;}
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="bs-logo.webp" alt="BulgarSolution Logo"></a>
+        <nav>
+            <a href="index.html">Начало</a>
+            <a href="services.html">Услуги</a>
+            <a href="contact.html" class="activepage">Контакт</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Свържете се с нас</h1>
+
+        <form id="contactForm">
+            <label for="name">Вашето име</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Вашият имейл</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Съобщение</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Изпрати Запитване Сега</button>
+        </form>
+
+        <div class="faq-section">
+            <h2>Често задавани въпроси</h2>
+
+            <div class="faq">
+                <h3>Какви услуги предлагате?</h3>
+                <p>Ние предлагаме изграждане на уебсайтове, SEO оптимизация, техническа поддръжка и други уеб услуги.</p>
+            </div>
+
+            <div class="faq">
+                <h3>Колко време отнема изграждането на уебсайт?</h3>
+                <p>Времето зависи от сложността на проекта. Стандартните проекти се изпълняват в рамките на 2-4 седмици.</p>
+            </div>
+
+            <div class="faq">
+                <h3>Как да започнем работа с вас?</h3>
+                <p>Свържете се с нас чрез формата по-горе, за да обсъдим вашите изисквания и цели.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BulgarSolution SEO. Всички права запазени.</p>
+    </footer>
+
+    <script>
+        // Toggle FAQ visibility
+        document.querySelectorAll('.faq').forEach(faq => {
+            faq.addEventListener('click', () => {
+                const content = faq.querySelector('p');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // EmailJS form submission script (already included in your code)
+        emailjs.init("RSVKpDYIgHxe2xtCg");
+        document.getElementById("contactForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            emailjs.sendForm("emailj-com", "template_owhdkc8", this).then(
+                function() {
+                    alert("Вашето съобщение беше изпратено успешно!");
+                },
+                function(error) {
+                    alert("Възникна грешка. Моля, опитайте отново.");
+                    console.error(error);
+                }
+            );
+        });
+    </script>
+</body>
+</html>
