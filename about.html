@@ -216,10 +216,12 @@ margin:20px;
             position: relative;
             max-width: 90%;
             max-height: 90%;
+             overflow-y: auto; /* Enable vertical scrolling */
             animation: zoomIn 0.5s;
         }
         .modal-content img {
             width: 100%;
+             height: auto; /* Allow height to adjust based on aspect ratio */
         }
         .modal-close {
             position: absolute;
