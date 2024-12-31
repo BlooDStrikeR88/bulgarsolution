@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Открийте най-добрите ценови пакети за SEO услуги, съобразени с вашите нужди. Подобрете вашия онлайн бизнес с нашите експертни решения.">
-
-    <title>Ценови пакети за SEO услуги</title>
-
+    <title>Bulgar Solution - Уеб Услуги</title>
     <style>
-body {
+        body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             background: linear-gradient(to bottom, #1f1c2c, #928dab);
-            color: #494949;
+            color: #fff;
             overflow-x: hidden;
         }
-         header {
+
+
+
+            header {
           background-color: #0078D7;
             color: white;
             padding: 10px 20px;
@@ -62,36 +62,32 @@ header img:hover, .package img:hover {
     transform: scale(1.1); /* Slightly enlarges the link on hover */
         }
 
- .activepage{background-color: #429fff59;
+      
+       .activepage{background-color: #429fff59;
     transform: scale(1.02); /* Slightly enlarges the link on hover */}
         main {
             max-width: 1000px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff40;
+            background-color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
-		
-		 header h1 {
+  
+
+
+
+        header h1 {
             font-size: 3rem;
             margin: 0;
             color: #ffdf6c;
             text-transform: uppercase;
         }
-		
-		 header p {
+        header p {
             font-size: 1.2rem;
             color: #ddd;
         }
-		
-        h1, h2 {
-            color: #37d153;
-    font-family: cursive;
-        }
-		
-		
-		 .hero-slider-container {
+        .hero-slider-container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -155,152 +151,117 @@ margin:20px;
             color: #ddd;
             line-height: 1.6;
         }
-		
-		
-      .package {
-    border: 1px solid #ddd;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: #f7f7f7eb;
-    opacity: 0; /* Initially invisible */
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition for smooth fade-in */
-    transform: translateY(-12px); /* Initially position them slightly above */
-}
-
-.package.visible {
-    opacity: 1;
-    transform: translateY(0); /* Return to normal position */
-}
-
-.package:nth-child(1) {
-    animation-delay: 0s; /* First package, no delay */
-}
-.package:nth-child(2) {
-    animation-delay: 0.5s; /* 0.5s delay for the second package */
-}
-.package:nth-child(3) {
-    animation-delay: 1s; /* 1s delay for the third package */
-}
-.package:nth-child(4) {
-    animation-delay: 1.5s; /* 1.5s delay for the fourth package */
-}
-        .package h2 {
-            margin-top: 0;
-        }
-        .price {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #d03038;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-          background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient */
-            color: white;
-            margin-top: 20px;
-        }
-        form {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f7f7f7;
-            border-radius: 8px;
-            animation: fadeIn 1s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-12px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-
-      
-
-
-        form label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        form input, form textarea, form button {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        
-       @keyframes popInOut {
-    0%, 100% {
-        transform: scale(1); /* Normal size */
-    }
-    50% {
-        transform: scale(1.2); /* Pops in (scales up) */
-    }
-}
-
-form button {
-    background-color: #ac0907;
-    max-width:50%; text-align:center; margin-left:auto; margin-right:auto;
-    color: white;
-    border: none;
-    cursor: pointer;
-    animation: popInOut 3.5s infinite; /* Apply pop-in and pop-out animation */
-    display: inherit;
-}
-        form button:hover {
-            background-color: #0a7f4f;
-        }
-        .captcha {
+        .portfolio-container {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            animation: fadeUp 2s;
+        }
+        .portfolio-item {
+            margin: 15px;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            background: #fff;
+            color: #333;
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .portfolio-item img {
+            width: 100%;
+            filter: grayscale(50%);
+            transition: filter 0.5s, transform 0.3s;
+        }
+        .portfolio-item img:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+        .portfolio-item a {
+            display: inline-block;
+            text-decoration: none;
+            color: #007bff;
+            margin: 15px 0;
+            font-weight: bold;
+            background: #f4f4f9;
+            padding: 10px 20px;
+            border-radius: 50px;
+            transition: background 0.3s, color 0.3s;
+        }
+        .portfolio-item a:hover {
+            background: #007bff;
+            color: #fff;
+        }
+
+ .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
             align-items: center;
-            gap: 10px;
+            z-index: 1000;
+            animation: fadeIn 0.5s;
         }
-        .captcha img {
-            border: 1px solid #ddd;
+        .modal-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+             overflow-y: auto; /* Enable vertical scrolling */
+            animation: zoomIn 0.5s;
+        }
+        .modal-content img {
+            width: 100%;
+             height: auto; /* Allow height to adjust based on aspect ratio */
+        }
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #fff;
+            color: #333;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 16px;
             border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
         }
-        .captcha input {
-            flex-grow: 1;
+        .modal-close:hover {
+            background: #333;
+            color: #fff;
         }
-
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-    main {
-        padding: 10px;
-    }
-    form button {
-        max-width: 100%; /* Full-width button on mobile */
-    }
-    .package {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    .package {
-        padding: 15px;
-        font-size: 0.9em;
-    }
-    .package h2 {
-        font-size: 1.2em;
-    }
-    .price {
-        font-size: 1em;
-    }
-}
-
-
+        
+  
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
+
 
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H20LCD9KG0"></script>
@@ -314,186 +275,110 @@ form button {
 </head>
 <body>
 <header>
-        <a href="index.html" title="Към началната страница"><img src="bs-logo.webp" alt="BulgarSolution SEO Agency Logo"></a>
+
+    
+
+     <a href="index.html" title="Към началната страница"><img src="bs-logo.webp" alt="BulgarSolution SEO Agency Logo"></a>
         <nav>
             <a href="index.html" class="activepage"><strong>Начало</strong></a>
             <a href="services.html">Услуги</a>
-            <a href="about.html">За нас</a>
+            <a href="about.html">Цени</a>
             <a href="contact.html">Контакт</a>
         </nav>
-    </header>
-    <main>
-        <h1 class="lazy-load">Ценови пакети за SEO услуги</h1>
-        <!-- SEO Packages -->
-        <div class="package lazy-load">
-            <h2>Пакет 1: Основен</h2>
-            <p><strong>Подходящ за:</strong> Малки уебсайтове или стартиращи бизнеси с ограничен бюджет.</p>
-            <ul>
-                <li>Първоначален SEO одит: Анализ на техническото състояние на сайта.</li>
-                <li>Проучване на ключови думи: До 3-4 ключови думи.</li>
-<li>Добавяне на нужния SEO софтуер и цялостната му настройка.</li>
-                <li>On-Page оптимизация, включително изображения и мета данни.</li> 
-                
-<li>OnPage Link-Building: Вътрешно-сайтово свързване спрямо текущите СЕО догми и тенденции.</li>
-                <li>OffPage Link-Building: 5 фондационни линка и/или поправяне на текущо същеструващи такива(По желание на клиента).</li>
-                <li>Месечен отчет.</li>
-            </ul>
-            <p class="price">Цена: 150лв. за първия месец и по 100лв за всеки следващ.</p>
-        </div>
-        <div class="package lazy-load">
-            <h2>Пакет 2: Стандартен</h2>
-            <p><strong>Подходящ за:</strong> Развиващи се бизнеси.</p>
-            <ul>
-                <li>Всички услуги от Основния пакет.</li>
-                <li>Проучване на до 10 ключови думи.</li>
-<li>Техническа оптимизация: Скорост, SSL сертификат, Мобилна версия.</li>
-                <li>Създаване на съдържание: 2 статии месечно.</li>
+</header>
+
+<div class="hero-slider-container lazy-loading">
+    <div class="hero-slider" id="hero-slider">
+        <img src="slider1.webp" alt="Слайдер изображение 1" class="active">
+        <img src="slider2.webp" alt="Слайдер изображение 2">
+        <img src="slider4.webp" alt="Слайдер изображение 3">
+        <img src="slider5.webp" alt="Слайдер изображение 4">
+        <a href="contact.html" class="slider-button">Свържете се с нас</a>
+    </div>
+</div>
+
+<div class="about-us">
+    <h1>За Bulgar Solution</h1>
+ <p>Професионални уеб услуги за българския пазар</p>
+    <p>Ние сме "Bulgar Solution" – компания, специализирана в създаването и поддръжката на уебсайтове. Предлагаме услуги като изграждане на HTML и WordPress сайтове, SEO оптимизация, техническа поддръжка и други уеб решения. Нашата мисия е да предоставим висококачествени услуги, които да отговорят на нуждите на бизнеса в България.</p>
+ 
 
 
- <li>Оптимизиране на изображения
--включва преобразуване и
-компресиране без загуба на качество
-на всички изображения,
-тяхното ръчно преименуване и добавяне на SEO Alt + SEO Title на
-всяко изображение)</li>
+</div>
 
-                <li>Link-Building: Социални линкове, 10 фондационни линка, 5 директории.</li>
-                <li>Локално SEO и Google My Business профил.</li>
-                <li>Месечен отчет.</li>
-            </ul>
-            <p class="price">Цена: 250лв. за първия месец и по 180лв. за всеки следващ </p>
-        </div>
+<div class="portfolio-container">
+    <div class="portfolio-item">
+        <img src="p5e-s.jpg" alt="Проект 1" onclick="openModal('p5e.jpg', 'https://pure5extraction.com')">
+        <a href="https://pure5extraction.com" target="_blank">Виж сайта</a>
+    </div>
+    <div class="portfolio-item">
+        <img src="pfl-eu-s.jpg" alt="Проект 2" onclick="openModal('pfl-eu.jpg', 'https://pureforlife.eu')">
+        <a href="https://pureforlife.eu" target="_blank">Виж сайта</a>
+    </div>
 
+    <div class="portfolio-item">
+        <img src="irarm-s.jpg" alt="Проект 3" onclick="openModal('irarm.jpg', 'https://irarm.bg')">
+        <a href="https://irarm.bg" target="_blank">Виж сайта</a>
+    </div>
+    
+    <div class="portfolio-item">
+        <img src="pfl-s.jpg" alt="Проект 4" onclick="openModal('pfl.jpg', 'https://pureforlife.com')">
+        <a href="https://pureforlife.com" target="_blank">Виж сайта</a>
+    </div>
+    <div class="portfolio-item">
+        <img src="xtaz-s.jpg" alt="Проект 5" onclick="openModal('xtaz.jpg', 'https://xtaz.com')">
+        <a href="https://xtaz.com" target="_blank">Виж сайта</a>
+    </div>
 
-         <div class="package lazy-load">
-            <h2>Пакет 3: Премиум</h2>
-            <p><strong>Подходящ за:</strong> Средни и големи компании.</p>
-            <ul>
-                <li>Всички услуги от Стандартния пакет</li>
-                <li>Проучване на ключови думи (до 20)</li>
-                <li>Създаване на съдържание (4 статии месечно)</li>
-                <li>Link-Building: Фондационни линкове (15), Гост публикации (2), Директории (10)</li>
+    <div class="portfolio-item">
+        <img src="aemctech-s.jpg" alt="Проект 6" onclick="openModal('aemctech.jpg', 'https://aemctech.com/')">
+        <a href="https://aemctech.com/" target="_blank">Виж сайта</a>
+    </div>
 
-   <li>Промяна на текущото съдържание
-на уебсайта правейки го по-SEO
-Friendly - и по-подходящо за
-класирането и оптимизацията му +
-добавяне на ново съдържание
-страници/статии оптимизирани за
-най-важните ключови думи.  </li>
-                
-                <li>Техническа оптимизация: Schema Markup</li>
-                <li>Месечен отчет</li>
-            </ul>
-            <p class="price">Цена: 350лв. за месец 1 и по 250лв за всеки следващ.</p>
-        </div>
+    <div class="portfolio-item">
+        <img src="metalwork-comerg-s.jpg" alt="Проект 7" onclick="openModal('metalwork-comerg.jpg', 'https://metalwork.comerg.com')">
+        <a href="https://metalwork.comerg.com" target="_blank">Виж сайта</a>
+    </div>
 
-        <div class="package lazy-load">
-            <h2>Пакет 4: Ексклузивен</h2>
-            <p><strong>Подходящ за:</strong> Големи компании с амбиции за водещи позиции.</p>
-            <ul>
-                <li>Всички услуги от Премиум пакета</li>
-                <li>Проучване на ключови думи (бройка по желание)</li>
-                <li>Създаване и промяна на съдържание (по договаряне)</li>
-                <li>Link-Building: Фондационни линкове (20+), Гост публикации (5+), Директории (20+)</li>
-                <li>Настройка и поддръжка на Google Ads реклами или Facebook и Instagram Meta business реклами</li>
-                 <li>Персонални желания за оптимизация на различни други неща или други IT услуги включаем линкбилдинг.</li>
-            </ul>
-            <p class="price">Цена: (по договаряне): ~ 35лв на час работа.</p>
-        </div>
+    <div class="portfolio-item">
+        <img src="brothersmanning-s.jpg" alt="Проект 8" onclick="openModal('brothersmanning.jpg', 'https://brothersmanning.com/')">
+        <a href="https://brothersmanning.com/" target="_blank">Виж сайта</a>
+    </div>
 
-<hr>
- <div class="package lazy-load"> <div  style="padding:10px;">
-            <h2>Забележки важащи за всеки пакет:</h2>
-           
-            <ul>
-                <li>Цените на пакетите са валидни за уебсайтове със стандартен мащаб. За по-големи уебсайтове оптимизацията изисква повече време и е по-сложна. В този контекст, оптимизационните задачи, описани в избрания пакет, могат да бъдат завършени по-бързо при по-малки уебсайтове, докато при по-големите процесът може да отнеме повече време.</li>
-  <li>След приключване на всички дейности, включени в избрания пакет, и заплащане на таксата за следващия месец, автоматично започвам да изпълнявам задачи и оптимизации, характерни за по-високия пакет. В този случай, работата ми ще бъде оценявана на база почасова ставка от 25 до 35 лв.</li> 
-  <li>След завършване на цялостната SEO оптимизация на уебсайта, включително всички технически подобрения и оптимизацията на съдържанието, последващата работа ще се съсредоточи върху линк билдинг и създаването на ново съдържание, насочено към ключови думи от съответната ниша.</li>
-    <li>След като всички външни линкове, предвидени в пакета, бъдат изградени, и бъде публикувано оптимално количество съдържание за съответния период, основната ми работа ще бъде насочена към създаването на допълнителни външни линкове. Това ще увеличи SEO авторитета на домейна и ще подобри класирането му в търсачките.</li>
-                <li>По желание на клиента, мога да адаптирам задачите и услугите според специфичните му изисквания, независимо от избрания пакет. В тези случаи извършената работа ще бъде оценявана на база реално вложеното време с часова ставка от 25лв-35лв на час.</li>
-    <li>Работя бързо, като стандартното ми заплащане е ~25-35лв на час.(По-ниската цена е приложима при абонаментни услуги, докато за еднократна работа без абонамент почасовата ставка е 35 лв.)</li>
-            </ul></div></div>
-<br>
-        <!-- More packages here -->
-        
-      <h2 class="lazy-load" style="text-align:center;">Свържете се с нас</h2>
-     
-<form id="contactForm" class="lazy-load">
-    <label for="name">Вашето име</label>
-    <input type="text" id="name" name="name" required>
+    
+</div>
 
-    <label for="email">Вашият имейл</label>
-    <input type="email" id="email" name="email" required>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">Затвори</button>
+        <img id="modal-img" src="" alt="">
+    </div>
+</div>
 
-    <label for="message">Съобщение</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-  
-    <button type="submit">Изпрати Запитване Сега</button>
-</form>
-
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    // Initialize EmailJS with your Public Key
-    emailjs.init("RSVKpDYIgHxe2xtCg"); // Replace with your actual Public Key
-
-    // Handle form submission
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-        e.preventDefault(); // Prevent the default form submission
-
-        // Send the form data using EmailJS
-        emailjs.sendForm("emailj-com", "template_owhdkc8", this)
-            .then(function(response) {
-                alert("Вашето съобщение беше изпратено успешно!");
-            }, function(error) {
-                alert("Възникна грешка. Моля, опитайте отново.");
-                console.error("EmailJS Error:", error);
-            });
-    });
-</script>
-
-
-
-
-
-    </main>
-    <footer>
-        <p>&copy; 2024 BulgarSolution SEO. Всички права запазени.</p>
-    </footer>
 
 <script>
-// Intersection Observer to detect when package divs enter the viewport
-document.addEventListener('DOMContentLoaded', function () {
-    const packages = document.querySelectorAll('.package'); // Select all packages
+    // Slider functionality
+    const slides = document.querySelectorAll('.hero-slider img');
+    let currentSlide = 0;
 
-    // Options for the Intersection Observer
-    const options = {
-        root: null, // Viewport as the root
-        rootMargin: '0px', // No margin offset
-        threshold: 0.1, // Trigger when 10% of the element is visible
-    };
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 3000);
 
-    // Callback function for when an element enters the viewport
-    const callback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Add 'visible' class to the element to trigger the fade-in animation
-                entry.target.classList.add('visible');
-                // Stop observing the element after it's visible
-                observer.unobserve(entry.target);
-            }
-        });
-    };
+     // Modal functionality
+    function openModal(imageSrc, url) {
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modal-img');
+        modalImg.src = imageSrc;
+        modal.style.display = 'flex';
+    }
 
-    // Create an Intersection Observer
-    const observer = new IntersectionObserver(callback, options);
-
-    // Observe each package
-    packages.forEach(packageDiv => {
-        observer.observe(packageDiv);
-    });
-});
+    function closeModal() {
+        const modal = document.getElementById('modal');
+        modal.style.display = 'none';
+    }
 </script>
 </body>
 </html>
