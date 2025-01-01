@@ -234,7 +234,9 @@ margin:20px;
             position: absolute;
             top: 10px;
             right: 10px;
-            background: #fff;
+                box-shadow: 0px 0px 10px #00000091;
+    font-weight: 600;
+    background: #fffffff2;
             color: #333;
             border: none;
             padding: 5px 10px;
@@ -247,6 +249,42 @@ margin:20px;
             background: #333;
             color: #fff;
         }
+		
+		
+		
+		       .modal-visit {
+              position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-1%, -1%);
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 15px #000000d0;
+    font-weight: 600;
+    background: linear-gradient(135deg, #cb1212, #0c9d0c);
+    color: #fff;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: background 0.5s ease-in-out, transform 0.3s ease-in-out, color 0.5s, box-shadow 0.3s;
+    animation: appearFromTop 0.8s ease-out;
+    overflow: visible;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: #ffffffba;
+    font-family: system-ui;
+        }
+        .modal-visit:hover {
+         background: linear-gradient(45deg, #068506, #8d0707); /* Reversed and darker gradient */
+    color: white;
+
+    transform: scale(1.1); /* Pop-up hover effect */
+    box-shadow: 0px 0px 20px #000000f0; /* Stronger shadow */
+        }
 
          footer {
             text-align: center;
@@ -255,6 +293,56 @@ margin:20px;
             color: white;
             margin-top: 20px;
         }
+		
+		
+		.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto a new row if needed */
+    gap: 16px; /* Adds space between items */
+    justify-content: center; /* Center the items horizontally */
+    padding: 20px;
+}
+
+.portfolio-background {
+    width: calc(32% - 10px); /* Each item takes 32% of the container width with space for the gap */
+    aspect-ratio: 16 / 9; /* Automatically enforces a 16:9 ratio */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-background:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-background a {
+     position: absolute;
+    bottom: 0%; /* 0% margin from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for horizontal centering */
+    text-decoration: none;
+    color: #d90e0a;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.portfolio-background a:hover {
+    background: #990e0d;
+    color: #fff;
+}
+
         
   
         @keyframes fadeIn {
@@ -275,6 +363,194 @@ margin:20px;
                 transform: translateY(0);
             }
         }
+		
+
+
+
+
+@keyframes appearFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Wave effect */
+.modal-visit::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 75%);
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+    animation: waveEffect 1.5s infinite ease-out;
+}
+
+@keyframes waveEffect {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+
+
+
+
+
+
+
+/* Basic Styles for Hamburger Menu */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-menu .line {
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    padding: 8%;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.95); /* Transparent background */
+    flex-direction: column;
+      align-items: flex-start;
+     justify-content: flex-start;
+	  padding-top: 20px;
+     animation: fadeIn 0.5s ease-in-out;
+	   z-index: 999;
+}
+
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: background-color 0.5s, transform 0.3s;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+.mobile-nav a:hover {
+         background-color: #00B300; /* Green on hover */
+            color: #ff0000; /* Red text on hover */
+            transform: scale(1.05);
+}
+
+  .close-menu {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .close-menu:hover {
+            color: #ff0000;
+        }
+
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Desktop Navigation - Only Visible on Desktop */
+.desktop-nav {
+    display: flex;
+    gap: 15px;
+}
+
+
+
+
+
+
+		
+		@media (max-width: 768px) {
+    .portfolio-background {
+        width: calc(49% - 10px); /* Two items per row on tablets */
+    }
+	
+	
+	/* Mobile Navigation Toggle */
+
+    .desktop-nav {
+        display: none; /* Hide desktop nav on mobile */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show hamburger menu on mobile */
+    }	
+	
+	.activepage {
+    background-color: #51990f;}
+	
+	  @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+}
+
+@media (max-width: 767px) {
+  .modal-visit {
+        
+        left: 10px; /* Move the button to the left side */
+     
+    }
+
+   
+}
+
+
+
+@media (max-width: 480px) {
+    .portfolio-background {
+        width: calc(100% - 10px); /* One item per row on small screens */
+    }
+}
+
+		
     </style>
 
 
@@ -293,13 +569,33 @@ margin:20px;
 
     
 
-     <a href="index.html" title="Към началната страница"><img src="bs-logo.webp" alt="BulgarSolution SEO Agency Logo"></a>
-        <nav>
+     <a href="index.html" title="Към началната страница"><img src="bs-logo.webp" alt="BulgarSolution SEO Агенция - лого"></a>
+        
+		    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger-menu" onclick="toggleMobileNav()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+    <!-- Desktop Navigation -->
+		
+		<nav class="desktop-nav">
             <a href="index.html" class="activepage"><strong>Начало</strong></a>
             <a href="services.html">Услуги</a>
             <a href="about.html">Цени</a>
             <a href="contact.html">Контакт</a>
         </nav>
+		
+		
+		   <!-- Mobile Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+	<span class="close-menu" onclick="toggleMobileNav()">x</span>
+        <a href="index.html" class="activepage"><strong>Начало</strong></a>
+        <a href="services.html">Услуги</a>
+        <a href="about.html">Цени</a>
+        <a href="contact.html">Контакт</a>
+    </nav>
 </header>
 
 <div class="hero-slider-container lazy-loading" itemscope itemtype="https://schema.org/ImageObject">
@@ -314,134 +610,80 @@ margin:20px;
 
 <div class="about-us" itemscope itemtype="https://schema.org/Article">
     <h1 itemprop="headline">За Bulgar Solution</h1>
-    <p itemprop="description">Професионални уеб услуги за Българския пазар</p>
-    <p style="font-size: 1.3rem;" itemprop="text">"Bulgar Solution" е водеща компания, специализирана в изграждането и поддръжката на уебсайтове, предоставяща иновативни и ефективни решения за бизнеса в България. Ние предлагаме пълна гама от услуги, включително създаване на HTML и WordPress сайтове, SEO оптимизация, техническа поддръжка и други уеб решения. Нашата основна цел е да осигурим качествени уеб услуги, които да отговорят на специфичните нужди и цели на нашите клиенти.</p>
+ <p itemprop="description">Професионални уеб услуги за Българския пазар</p>
+  <p style="font-size: 1.3rem;" itemprop="text">"Bulgar Solution" е водеща компания, специализирана в изграждането и поддръжката на уебсайтове, предоставяща иновативни и ефективни решения за бизнеса в България. Ние предлагаме пълна гама от услуги, включително създаване на HTML и WordPress сайтове, SEO оптимизация, техническа поддръжка и други уеб решения. Нашата основна цел е да осигурим качествени уеб услуги, които да отговорят на специфичните нужди и цели на нашите клиенти.</p>
     <p style="font-size: 1.2rem;" itemprop="text">Някои от проектите, които са показани по-долу, са разработени за стари уебсайтове, които не са в моята собственост. Поради това те може да изглеждат остарели или да имат други визуални или функционални ограничения. За да видите как изглеждат можете да кликнете върху изображенията по-долу или да посетите директно линковете към самите сайтове.</p>
 </div>
 
 <div class="portfolio-container" itemscope itemtype="https://schema.org/CreativeWork">
-    <div class="portfolio-item" itemscope itemtype="https://schema.org/WebSite">
-        <img src="p5e-s.jpg" alt="Проект 1" onclick="openModal('p5e.jpg', 'https://pure5extraction.com')" itemprop="image">
-        <a href="https://pure5extraction.com" target="_blank" itemprop="url">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('p5e-s.jpg');"  itemscope itemtype="https://schema.org/WebSite"  data-image="p5e.jpg"  data-url="https://pure5extraction.com">
+        <a href="#" target="_blank" class="open-modal">Разгледай</a>
     </div>
-    <div class="portfolio-item">
-        <img src="pfl-eu-s.jpg" alt="Проект 2" onclick="openModal('pfl-eu.jpg', 'https://pureforlife.eu')">
-        <a href="https://pureforlife.eu" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('pfl-eu-s.jpg');"  itemscope itemtype="https://schema.org/WebSite"  data-image="pfl-eu.jpg"  data-url="https://pureforlife.eu">
+        <a href="https://pureforlife.eu" target="_blank">Разгледай</a>
     </div>
-
-    <div class="portfolio-item">
-        <img src="irarm-s.jpg" alt="Проект 3" onclick="openModal('irarm.jpg', 'https://irarm.bg')">
-        <a href="https://irarm.bg" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('irarm-s.jpg');"  itemscope itemtype="https://schema.org/WebSite"  data-image="irarm.jpg" data-url="https://irarm.bg">
+        <a href="https://irarm.bg" target="_blank">Разгледай</a>
     </div>
-    
-    <div class="portfolio-item">
-        <img src="pfl-s.jpg" alt="Проект 4" onclick="openModal('pfl.jpg', 'https://pureforlife.com')">
-        <a href="https://pureforlife.com" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('pfl-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="pfl.jpg" data-url="https://pureforlife.com">
+        <a href="https://pureforlife.com" target="_blank">Разгледай</a>
     </div>
-    <div class="portfolio-item">
-        <img src="xtaz-s.jpg" alt="Проект 5" onclick="openModal('xtaz.jpg', 'https://xtaz.com')">
-        <a href="https://xtaz.com" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('xtaz-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="xtaz.jpg" data-url="https://xtaz.com">
+        <a href="https://xtaz.com" target="_blank">Разгледай</a>
     </div>
-
-    <div class="portfolio-item">
-        <img src="aemctech-s.jpg" alt="Проект 6" onclick="openModal('aemctech.jpg', 'https://aemctech.com/')">
-        <a href="https://aemctech.com/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('aemctech-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="aemctech.jpg" data-url="https://aemctech.com/">
+        <a href="https://aemctech.com/" target="_blank">Разгледай</a>
     </div>
-
-    <div class="portfolio-item">
-        <img src="metalwork-comerg-s.jpg" alt="Проект 7" onclick="openModal('metalwork-comerg.jpg', 'https://metalwork.comerg.com')">
-        <a href="https://metalwork.comerg.com" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('metalwork-comerg-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="metalwork-comerg.jpg" data-url="https://metalwork.comerg.com">
+        <a href="https://metalwork.comerg.com" target="_blank">Разгледай</a>
     </div>
-
-    <div class="portfolio-item">
-        <img src="brothersmanning-s.jpg" alt="Проект 8" onclick="openModal('brothersmanning.jpg', 'https://brothersmanning.com/')">
-        <a href="https://brothersmanning.com/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('brothersmanning-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="brothersmanning.jpg" data-url="https://brothersmanning.com/">
+        <a href="https://brothersmanning.com/" target="_blank">Разгледай</a>
     </div>
-
-
-
-
-
-
-        <div class="portfolio-item">
-        <img src="anavor-s.jpg" alt="Проект 9" onclick="openModal('anavor.jpg', 'https://anavor.com/bg/')">
-        <a href="https://anavor.com/bg/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('anavor-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="anavor.jpg" data-url="https://anavor.com/bg/">
+        <a href="https://anavor.com/bg/" target="_blank">Разгледай</a>
     </div>
-
-
-
-        <div class="portfolio-item">
-        <img src="makagra-s.jpg" alt="Проект 10" onclick="openModal('makagra.jpg', 'http://makagra.com/bg/')">
-        <a href="http://makagra.com/bg/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('makagra-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="makagra.jpg" data-url="http://makagra.com/bg/">
+        <a href="http://makagra.com/bg/" target="_blank">Разгледай</a>
     </div>
-
-
-
-        <div class="portfolio-item">
-        <img src="sexshopvarna-s.jpg" alt="Проект 11" onclick="openModal('sexshopvarna.jpg', 'http://sexshopvarna.com/')">
-        <a href="http://sexshopvarna.com/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('sexshopvarna-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="sexshopvarna.jpg" data-url="http://sexshopvarna.com/">
+        <a href="http://sexshopvarna.com/" target="_blank">Разгледай</a>
     </div>
-
-
-
-        <div class="portfolio-item">
-        <img src="sexshopsofia-s.jpg" alt="Проект 12" onclick="openModal('sexshopsofia.jpg', 'http://sexshopsofia.com/')">
-        <a href="http://sexshopsofia.com/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('sexshopsofia-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="sexshopsofia.jpg" data-url=>
+        <a href="http://sexshopsofia.com/" target="_blank">Разгледай</a>
     </div>
-
-
-
-            <div class="portfolio-item">
-        <img src="3in1process-s.jpg" alt="Проект 13" onclick="openModal('3in1process.jpg', 'https://3in1process.com/')">
-        <a href="https://3in1process.com/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('3in1process-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="3in1process.jpg" data-url="http://sexshopsofia.com/">
+        <a href="https://3in1process.com/" target="_blank">Разгледай</a>
     </div>
-
-
-
-
-            <div class="portfolio-item">
-        <img src="ighost-us-blog-s.jpg" alt="Проект 14" onclick="openModal('ighost-us-blog.jpg', 'https://ighost.us/')">
-        <a href="https://ighost.us/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('ighost-us-blog-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="ighost-us-blog.jpg" data-url="https://ighost.us/">
+        <a href="https://ighost.us/" target="_blank">Разгледай</a>
     </div>
-
-
-
-
-            <div class="portfolio-item">
-        <img src="test.hrizantema.eu-s.jpg" alt="Проект 15" onclick="openModal('test.hrizantema.eu.jpg', 'https://test.hrizantema.eu/')">
-        <a href="https://test.hrizantema.eu/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('test.hrizantema.eu-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="test.hrizantema.eu.jpg" data-url="https://test.hrizantema.eu/">
+        <a href="https://test.hrizantema.eu/" target="_blank">Разгледай</a>
     </div>
-
-
-
-
-                <div class="portfolio-item">
-        <img src="hadderall.com.bg-s.jpg" alt="Проект 16" onclick="openModal('hadderall.com.bg.jpg', 'http://hadderall.com/bg/')">
-        <a href="http://hadderall.com/bg/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('hadderall.com.bg-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="hadderall.com.bg.jpg" data-url="http://hadderall.com/bg/">
+        <a href="http://hadderall.com/bg/" target="_blank">Разгледай</a>
     </div>
-
-
-
-                <div class="portfolio-item">
-        <img src="lawngevitylandscaping.com-s.jpg" alt="Проект 17" onclick="openModal('lawngevitylandscaping.com.jpg', 'https://www.lawngevitylandscaping.com/')">
-        <a href="https://www.lawngevitylandscaping.com/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('lawngevitylandscaping.com-s.jpg');" data-image="lawngevitylandscaping.com.jpg"  itemscope itemtype="https://schema.org/WebSite" data-url="https://www.lawngevitylandscaping.com/">
+        <a href="https://www.lawngevitylandscaping.com/" target="_blank">Разгледай</a>
     </div>
-
-
-                    <div class="portfolio-item">
-        <img src="sexavit.com.bg-s.jpg" alt="Проект 18" onclick="openModal('sexavit.com.bg.jpg', 'http://sexavit.com/bg/')">
-        <a href="http://sexavit.com/bg/" target="_blank">Виж сайта</a>
+    <div class="portfolio-item portfolio-background" style="background-image: url('sexavit.com.bg-s.jpg');"  itemscope itemtype="https://schema.org/WebSite" data-image="sexavit.com.bg.jpg" data-url="http://sexavit.com/bg/">
+        <a href="http://sexavit.com/bg/" target="_blank">Разгледай</a>
     </div>
-
-    
 </div>
+
+
+
 
 <div id="modal" class="modal">
     <div class="modal-content">
         <button class="modal-close" onclick="closeModal()">Затвори</button>
         <img id="modal-img" src="" alt="">
+        <a id="modal-link" class="modal-visit" href="" target="_blank" style="display: none;">Виж сайта</a> <!-- Optional link -->
     </div>
 </div>
+
+
 
 
 <script>
@@ -455,23 +697,106 @@ margin:20px;
         slides[currentSlide].classList.add('active');
     }, 3000);
 
-     // Modal functionality
+    // Modal functionality
     function openModal(imageSrc, url) {
         const modal = document.getElementById('modal');
         const modalImg = document.getElementById('modal-img');
-        modalImg.src = imageSrc;
-        modal.style.display = 'flex';
+        const modalLink = document.getElementById('modal-link');
+
+        modalImg.src = imageSrc; // Set the image source
+
+        // Handle URL if provided
+        if (url) {
+            modalLink.style.display = 'block';
+            modalLink.href = url;
+        } else {
+            modalLink.style.display = 'none';
+        }
+
+        modal.style.display = 'flex'; // Show the modal
     }
 
     function closeModal() {
         const modal = document.getElementById('modal');
         modal.style.display = 'none';
     }
+
+    // Add event listeners to portfolio items
+    const portfolioItems = document.querySelectorAll('.portfolio-background');
+    portfolioItems.forEach((item) => {
+        item.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent default link behavior
+
+            // Get image and URL data from attributes
+            const imageSrc = item.getAttribute('data-image');
+            const url = item.getAttribute('data-url');
+
+            // Open modal with image and URL
+            openModal(imageSrc, url);
+        });
+    });
+
+    // Modal event listeners for closing
+    const modal = document.getElementById('modal');
+    const closeButton = document.querySelector('.modal-close');
+
+    closeButton.addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Other custom functionality (if any) can be added here
 </script>
 
- <footer>
-        <p>&copy; 2024 BulgarSolution SEO. Всички права запазени.</p>
+	
+<footer>
+    <p>&copy; 2024 BulgarSolution SEO. Всички права запазени.</p>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BulgarSolution",
+        "url": "https://bloodstriker88.github.io/bulgarsolution",
+        "copyrightHolder": {
+            "@type": "Organization",
+            "name": "BulgarSolution",
+            "url": "https://bloodstriker88.github.io/bulgarsolution"
+        },
+        "copyrightYear": 2024,
+        "publisher": {
+            "@type": "Organization",
+            "name": "BulgarSolution",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://bloodstriker88.github.io/bulgarsolution/bs-logo.webp",
+                "width": 73,
+                "height": 50
+            }
+        },
+        "inLanguage": "bg"
+    }
+    </script>
+</footer>
     </footer>
+	
+<script>
+    function toggleMobileNav() {
+        const mobileNav = document.getElementById('mobileNav');
+        mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Close the mobile navigation if clicked outside of it
+    window.addEventListener('click', function(event) {
+        const mobileNav = document.getElementById('mobileNav');
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        
+        if (!mobileNav.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+            mobileNav.style.display = 'none';
+        }
+    });
+</script>
 </body>
 
    
