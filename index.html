@@ -2039,10 +2039,69 @@
 
 
 
+<script>
+  function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/; samesite=lax; domain=" + window.location.hostname;
+      console.log("Cookie set:", name, value);
+  }
 
+  function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+          var c = ca[i].trim();
+          if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+  }
 
+  document.addEventListener('DOMContentLoaded', function() {
+      console.log("DOM fully loaded. Running GDPR script.");
+      var gdprPopup = document.querySelector('.gdpr-settings');
 
+      if (!gdprPopup) {
+          console.error("GDPR popup element not found!");
+          return;
+      }
 
+      // Check the theme's cookie instead of setting a new one
+      if (getCookie('__cnvs_cookies_accept') === '1') {
+          gdprPopup.style.display = 'none';
+          console.log("GDPR already accepted (Canvas theme). Hiding popup.");
+      } else {
+          gdprPopup.style.display = 'block';
+          console.log("GDPR not accepted. Showing popup.");
+      }
+
+      function acceptGDPR(e) {
+          e.preventDefault();
+          setCookie('__cnvs_cookies_accept', '1', 365);
+          setCookie('__cnvs_cookies_decline', '0', 365);
+          gdprPopup.style.display = 'none';
+          console.log("GDPR accepted (Canvas theme). Hiding popup.");
+      }
+
+      var acceptBtn = document.querySelector('.gdpr-accept');
+      if (acceptBtn) {
+          acceptBtn.addEventListener('click', acceptGDPR);
+          console.log("Accept button found and event listener attached.");
+      } else {
+          console.error("Accept button not found!");
+      }
+
+      var saveBtn = document.querySelector('.gdpr-save-cookies');
+      if (saveBtn) {
+          saveBtn.addEventListener('click', acceptGDPR);
+          console.log("Save button found and event listener attached.");
+      }
+  });
+</script>
 
 
 </body>
