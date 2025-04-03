@@ -52,6 +52,16 @@
         line-height: 1.2;
         padding: 0 10px;
     }
+	
+	.text-above-first-one{
+       
+        white-space: normal !important; /* Позволява пренасяне */
+        word-wrap: break-word !important; /* Принуждава дългите думи да се пренасят */
+        text-align: center !important; /* Запазва центрирането */
+        line-height: 1.2 !important; /* Подобрява четливостта */
+        max-width: 90% !important; /* Ограничава ширината, за да не излиза извън екрана */
+        margin: 0 auto; /* Центрира текста хоризонтално */
+    }
 }
 	
 	
@@ -405,7 +415,7 @@
 								</div>
 
 								<!-- LAYER NR. 2 -->
-								<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"
+								<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase text-above-first-one"
 								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
 								data-y="['middle','middle','middle','middle']" data-voffset="['-55','-55','-90','-90']"
 								data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"
