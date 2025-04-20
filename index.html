@@ -2439,11 +2439,20 @@ normal;}
 
 <script>
   function switchToEnglish() {
-    var p = window.location.pathname;
-    if (p.startsWith('/en/')) return;
-    window.location.href = '/en' + p;
+    const projectRoot = '/bulgarsolution';
+    const currentPath = window.location.pathname;
+
+    // already in /bulgarsolution/en/ → do nothing
+    if (currentPath.startsWith(projectRoot + '/en/')) return;
+
+    // remove /bulgarsolution from the front of path
+    const relativePath = currentPath.replace(projectRoot, '');
+    
+    // redirect to /bulgarsolution/en/ + relative path
+    window.location.href = projectRoot + '/en' + relativePath;
   }
 </script>
+
 
 
 </body>
