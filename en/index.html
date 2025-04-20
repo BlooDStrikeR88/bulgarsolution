@@ -586,8 +586,8 @@ normal;}
   <li class="menu-item menu-item-lang">
     <a class="menu-link" href="#" onclick="switchToEnglish(); return false;">
       <img
-        src="images/bs/en_GB.webp"
-        alt="EN"
+        src="images/bs/bg_BG.webp"
+        alt="Bulgarian Flag"
         width="20" height="14"
         style="vertical-align:middle;"
       >
@@ -2438,12 +2438,24 @@ normal;}
 <script> // Helper functions to set and get cookies function setCookie(name, value, days) { var expires = ""; if (days) { var date = new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); expires = "; expires=" + date.toUTCString(); } document.cookie = name + "=" + (value || "") + expires + "; path=/"; } function getCookie(name) { var nameEQ = name + "="; var ca = document.cookie.split(';'); for (var i = 0; i < ca.length; i++) { var c = ca[i].trim(); if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length); } return null; } document.addEventListener('DOMContentLoaded', function() { // Check if the 'gdprAccepted' cookie is set to true var gdprPopup = document.querySelector('.gdpr-settings'); if (getCookie('gdprAccepted') === 'true') { if(gdprPopup) { gdprPopup.style.display = 'none'; } } else { if(gdprPopup) { gdprPopup.style.display = 'block'; } } // Function to accept GDPR and hide the popup function acceptGDPR(e) { e.preventDefault(); setCookie('gdprAccepted', 'true', 365); if (gdprPopup) { gdprPopup.style.display = 'none'; } } // Attach event listener to the "Приеми & Затвори" button var acceptBtn = document.querySelector('.gdpr-accept'); if (acceptBtn) { acceptBtn.addEventListener('click', acceptGDPR); } // Also attach event listener to the "Запази & Приеми" button if it exists var saveBtn = document.querySelector('.gdpr-save-cookies'); if (saveBtn) { saveBtn.addEventListener('click', acceptGDPR); } }); </script>
 
 <script>
-  function switchToEnglish() {
-    var p = window.location.pathname;
-    if (p.startsWith('/en/')) return;
-    window.location.href = '/en' + p;
+  function switchLanguage() {
+    const projectRoot = '/bulgarsolution';
+    const currentPath = window.location.pathname;
+
+    const isEnglish = currentPath.startsWith(projectRoot + '/en/');
+
+    if (isEnglish) {
+      // In English → go to Bulgarian version
+      const relativePath = currentPath.replace(projectRoot + '/en', '');
+      window.location.href = projectRoot + relativePath;
+    } else {
+      // In Bulgarian → go to English version
+      const relativePath = currentPath.replace(projectRoot, '');
+      window.location.href = projectRoot + '/en' + relativePath;
+    }
   }
 </script>
+
 
 
 </body>
