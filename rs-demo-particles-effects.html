@@ -913,7 +913,7 @@
       setInterval(() => {
         flap = flap === 0 ? 1 : 0;
         const angle = flap === 0 ? -5 : 5;
-        const scale = flap === 0 ? 1 : 1.05;
+        const scale = flap === 0 ? 1 : 1;
 
         bird.style.transform += ` rotate(${angle}deg) scale(${scale})`;
       }, 200);
