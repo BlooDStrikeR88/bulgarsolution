@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="bg-BG">
+<head itemscope itemtype="https://schema.org/WebPage">
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow, max-image-preview:large">
+	<link rel="canonical" href="https://bloodstriker88.github.io/bulgarsolution/ueb-sajtove-bs.html">
+
+	<meta name="author"    itemprop="author"    content="Bulgar Solution">
+	<meta name="publisher" itemprop="publisher" content="Bulgar Solution">
+
+	<!-- ==== SEO ============================================ -->
+	<title>Изработка на Уебсайт за Малък Бизнес — WordPress, HTML | Bulgar Solution</title>
+	<meta name="description" content="Изработка на уебсайт за малък бизнес в България. WordPress, HTML5, мобилен дизайн, базов SEO. Готов сайт за 7-10 дни. От 200 евро. Безплатна консултация.">
+	<meta name="keywords" content="изработка на уебсайт, цена сайт, WordPress сайт България, фирмен уебсайт, уеб дизайн, уеб разработка, малък бизнес сайт, изработка на сайт цена, responsive уебсайт, корпоративен сайт, изработка на онлайн магазин">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Изработка на Уебсайт за Малък Бизнес — WordPress, HTML | Bulgar Solution">
+	<meta property="og:description" content="Бърз, мобилен и SEO готов уебсайт за вашия бизнес. Готов за 7-10 дни. От 200 евро. Безплатна консултация.">
+	<meta property="og:url" content="https://bloodstriker88.github.io/bulgarsolution/ueb-sajtove-bs.html">
+	<meta property="og:locale" content="bg_BG">
+	<meta property="og:site_name" content="Bulgar Solution">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Изработка на Уебсайт за Малък Бизнес — WordPress, HTML">
+	<meta name="twitter:description" content="Бърз, мобилен и SEO готов уебсайт за вашия бизнес. От 200 евро.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-icons.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	<style>
+		.footer-logo{margin-left:auto;margin-right:auto;}
+		.currentpageu div{text-decoration: underline;}
+		.top-search-form input::placeholder{color:white;opacity:0.7;}
+		.full-header #header-wrap{background-color:#0000000a;}
+		.sticky-header #header-wrap{background-color:white;}
+		.menu-link{color:white;}
+		.sticky-header .menu-link{color:black;}
+
+		/* === HERO ============================================ */
+		.web-hero {
+			position: relative;
+			padding: 110px 0 60px;
+			background: linear-gradient(135deg, #f3f8fc 0%, #e8f4f8 50%, #e0f2f5 100%);
+			overflow: hidden;
+		}
+		.web-hero::before, .web-hero::after {
+			content: ""; position: absolute; border-radius: 50%;
+			filter: blur(60px); opacity: 0.55;
+		}
+		.web-hero::before { width: 380px; height: 380px; top: -120px; left: -120px;
+			background: radial-gradient(circle, #8ec5e0, transparent 70%); }
+		.web-hero::after  { width: 420px; height: 420px; bottom: -160px; right: -140px;
+			background: radial-gradient(circle, #7fd1c8, transparent 70%); }
+		.web-hero h1 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 56px;
+			line-height: 1.08;
+			color: #142c44;
+			letter-spacing: -1px;
+			margin-bottom: 18px;
+		}
+		.web-hero h1 .accent {
+			background: linear-gradient(90deg, #1a6fb8 0%, #2989d8 50%, #14b8a6 100%);
+			-webkit-background-clip: text; -webkit-text-fill-color: transparent;
+			background-clip: text;
+			font-style: italic;
+			font-family: 'Cormorant Garamond', serif;
+		}
+		.web-hero .lead {
+			font-size: 19px; line-height: 1.6; color: #3a4a5e;
+			max-width: 620px; margin-bottom: 28px;
+		}
+		.web-hero .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; }
+		.btn-web-primary {
+			background: linear-gradient(90deg, #1a6fb8 0%, #2989d8 100%);
+			color: #fff !important; padding: 14px 30px; border-radius: 999px;
+			font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;
+			font-size: 13px; box-shadow: 0 12px 28px rgba(41, 137, 216, 0.32);
+			transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+			border: none; display: inline-block;
+		}
+		.btn-web-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 38px rgba(41, 137, 216, 0.42); filter: brightness(1.08); color: #fff !important; }
+		.btn-web-ghost {
+			background: transparent; border: 2px solid #142c44; color: #142c44 !important;
+			padding: 12px 28px; border-radius: 999px;
+			font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase;
+			font-size: 13px;
+			transition: background 0.25s ease, color 0.25s ease;
+			display: inline-block;
+		}
+		.btn-web-ghost:hover { background: #142c44; color: #fff !important; }
+		.hero-meta {
+			display: flex; flex-wrap: wrap; gap: 22px; margin-top: 36px;
+			color: #3a4a5e; font-size: 14px;
+		}
+		.hero-meta .meta-item { display: flex; align-items: center; gap: 8px; }
+		.hero-meta .meta-item i { color: #1a6fb8; font-size: 18px; }
+
+		/* Hero floating cards (right side) */
+		.hero-cards { position: relative; height: 540px; }
+		.hero-cards .float-card {
+			position: absolute; border-radius: 14px;
+			box-shadow: 0 30px 60px rgba(20, 44, 68, 0.20);
+			overflow: hidden;
+			background: #fff;
+		}
+		.hero-cards .float-card.f1 { top: 30px; left: 0;  width: 250px; transform: rotate(-5deg); }
+		.hero-cards .float-card.f2 { top: 110px; right: 0; width: 250px; transform: rotate(5deg); z-index: 2; }
+		.hero-cards .float-card.f3 { bottom: 0; left: 50%; width: 250px; transform: translateX(-50%); }
+		.hero-cards .float-card svg { display: block; width: 100%; height: auto; }
+		@keyframes floatCardWeb {
+			0%,100% { transform: var(--rot) translateY(0); }
+			50%     { transform: var(--rot) translateY(-12px); }
+		}
+		.hero-cards .float-card.f1 { --rot: rotate(-5deg); animation: floatCardWeb 6s ease-in-out infinite; }
+		.hero-cards .float-card.f2 { --rot: rotate(5deg);  animation: floatCardWeb 6s ease-in-out infinite 1.5s; }
+		.hero-cards .float-card.f3 { --rot: translateX(-50%); animation: floatCardWeb 6s ease-in-out infinite 3s; }
+
+		/* === GALLERY ========================================= */
+		.web-gallery {
+			padding: 90px 0;
+			background: #f7fafc;
+		}
+		.section-eyebrow {
+			text-transform: uppercase;
+			letter-spacing: 4px;
+			font-size: 13px;
+			color: #1a6fb8;
+			font-weight: 600;
+			margin-bottom: 12px;
+			display: inline-block;
+		}
+		.section-title {
+			font-family: 'Playfair Display', serif;
+			font-weight: 700;
+			font-size: 42px;
+			color: #142c44;
+			line-height: 1.18;
+			margin-bottom: 18px;
+		}
+		.section-lead { font-size: 18px; color: #4a5a72; max-width: 680px; margin: 0 auto 50px; line-height: 1.6; }
+		.gallery-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 30px;
+		}
+		.gallery-card {
+			position: relative;
+			border-radius: 16px;
+			overflow: hidden;
+			box-shadow: 0 14px 38px rgba(20, 44, 68, 0.12);
+			transition: transform 0.35s cubic-bezier(.2,.8,.2,1), box-shadow 0.35s ease;
+			background: #fff;
+		}
+		.gallery-card:hover {
+			transform: translateY(-8px);
+			box-shadow: 0 28px 56px rgba(20, 44, 68, 0.22);
+		}
+		.gallery-card svg { display: block; width: 100%; height: auto; }
+		.gallery-card .gc-meta {
+			padding: 18px 22px;
+			border-top: 1px solid #e3edf3;
+		}
+		.gallery-card .gc-meta h4 {
+			margin: 0 0 4px; font-size: 17px;
+			font-family: 'Playfair Display', serif;
+			color: #142c44; font-weight: 600;
+		}
+		.gallery-card .gc-meta span { font-size: 13px; color: #6a7d94; letter-spacing: 1px; text-transform: uppercase; }
+
+		/* === FEATURES GRID =================================== */
+		.web-features {
+			padding: 90px 0;
+			background: #ffffff;
+		}
+		.feature-card {
+			padding: 32px 26px;
+			border-radius: 14px;
+			background: #f7fafc;
+			border: 1px solid #e3edf3;
+			height: 100%;
+			transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+		}
+		.feature-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 18px 36px rgba(20, 44, 68, 0.10);
+			border-color: #8ec5e0;
+		}
+		.feature-card .fc-icon {
+			width: 56px; height: 56px; border-radius: 14px;
+			display: flex; align-items: center; justify-content: center;
+			background: linear-gradient(135deg, #1a6fb8 0%, #14b8a6 100%);
+			color: #fff; font-size: 26px;
+			margin-bottom: 18px;
+			box-shadow: 0 10px 24px rgba(41, 137, 216, 0.30);
+		}
+		.feature-card h4 {
+			font-family: 'Playfair Display', serif; font-weight: 600;
+			font-size: 19px; color: #142c44; margin-bottom: 10px;
+		}
+		.feature-card p { color: #4a5a72; font-size: 14.5px; line-height: 1.6; margin: 0; }
+
+		/* === INNOVATION (Speed-First) ======================== */
+		.web-innovation {
+			padding: 100px 0;
+			background: linear-gradient(135deg, #0f2238 0%, #142c44 50%, #1a3a5c 100%);
+			color: #eaf4fb;
+			position: relative; overflow: hidden;
+		}
+		.web-innovation::before {
+			content: ""; position: absolute; top: -50%; right: -10%;
+			width: 700px; height: 700px;
+			background: radial-gradient(circle, rgba(20, 184, 166, 0.20), transparent 70%);
+			border-radius: 50%; filter: blur(40px);
+		}
+		.web-innovation .section-eyebrow { color: #7fd1c8; }
+		.web-innovation .section-title { color: #eaf4fb; }
+		.web-innovation p { color: #c5d6e3; font-size: 16px; line-height: 1.75; }
+		.innovation-list {
+			list-style: none; padding: 0; margin: 24px 0 0;
+		}
+		.innovation-list li {
+			display: flex; gap: 14px;
+			padding: 14px 0;
+			border-bottom: 1px solid rgba(234, 244, 251, 0.10);
+			color: #d2e0eb; font-size: 15px;
+		}
+		.innovation-list li:last-child { border-bottom: 0; }
+		.innovation-list li i {
+			color: #7fd1c8; font-size: 22px; flex-shrink: 0;
+			margin-top: 2px;
+		}
+		.innovation-list li strong { color: #ffffff; display: block; margin-bottom: 2px; }
+		.phone-mockup {
+			width: 280px; margin: 0 auto;
+			border-radius: 36px; padding: 14px;
+			background: linear-gradient(135deg, #08182a 0%, #142c44 100%);
+			box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45),
+			            0 0 0 1px rgba(234, 244, 251, 0.08);
+			position: relative;
+		}
+		.phone-mockup::before {
+			content: ""; position: absolute; top: 22px; left: 50%; transform: translateX(-50%);
+			width: 80px; height: 18px; background: #08182a; border-radius: 12px; z-index: 2;
+		}
+		.phone-mockup svg { display: block; width: 100%; border-radius: 26px; }
+
+		/* === STATS =========================================== */
+		.web-stats {
+			padding: 70px 0;
+			background: #f7fafc;
+		}
+		.stat-block { text-align: center; padding: 20px; }
+		.stat-block .stat-num {
+			font-family: 'Playfair Display', serif;
+			font-size: 56px; font-weight: 700;
+			background: linear-gradient(90deg, #1a6fb8, #2989d8, #14b8a6);
+			-webkit-background-clip: text; -webkit-text-fill-color: transparent;
+			background-clip: text;
+			line-height: 1;
+		}
+		.stat-block .stat-label {
+			margin-top: 10px; font-size: 14px; color: #4a5a72;
+			text-transform: uppercase; letter-spacing: 2px; font-weight: 600;
+		}
+
+		/* === PROCESS ========================================= */
+		.web-process {
+			padding: 90px 0;
+			background: #ffffff;
+		}
+		.process-step {
+			text-align: center; padding: 0 16px;
+			position: relative;
+		}
+		.process-step .step-num {
+			width: 76px; height: 76px;
+			border-radius: 50%;
+			margin: 0 auto 20px;
+			display: flex; align-items: center; justify-content: center;
+			font-family: 'Playfair Display', serif;
+			font-size: 32px; font-weight: 700;
+			background: linear-gradient(135deg, #1a6fb8, #14b8a6);
+			color: #fff;
+			box-shadow: 0 14px 28px rgba(41, 137, 216, 0.30);
+		}
+		.process-step h4 { font-family: 'Playfair Display', serif; font-size: 20px; color: #142c44; margin-bottom: 8px; }
+		.process-step p { font-size: 14.5px; color: #4a5a72; line-height: 1.6; }
+		.process-step::after {
+			content: ""; position: absolute;
+			top: 38px; right: -20%; width: 40%; height: 1px;
+			background: repeating-linear-gradient(to right, #8ec5e0 0, #8ec5e0 6px, transparent 6px, transparent 12px);
+		}
+		.process-step:last-child::after { display: none; }
+
+		/* === PRICING ========================================= */
+		.web-pricing {
+			padding: 90px 0;
+			background: linear-gradient(180deg, #f7fafc 0%, #e0f2f5 100%);
+		}
+		.pricing-card {
+			background: #fff;
+			border-radius: 18px;
+			padding: 42px 32px;
+			height: 100%;
+			border: 1px solid #e3edf3;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			position: relative;
+		}
+		.pricing-card:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(20, 44, 68, 0.14); }
+		.pricing-card.featured {
+			background: linear-gradient(135deg, #142c44 0%, #1a3a5c 100%);
+			color: #eaf4fb; border-color: transparent;
+			box-shadow: 0 30px 60px rgba(20, 44, 68, 0.30);
+		}
+		.pricing-card.featured h3, .pricing-card.featured .price-amount,
+		.pricing-card.featured .price-currency { color: #fff; }
+		.pricing-card.featured .price-desc { color: #c5d6e3; }
+		.pricing-card.featured ul li { color: #d2e0eb; }
+		.pricing-card.featured ul li i { color: #7fd1c8; }
+		.pricing-card .badge-pop {
+			position: absolute; top: -12px; right: 24px;
+			background: linear-gradient(90deg, #1a6fb8, #14b8a6);
+			color: #fff; font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase;
+			padding: 6px 12px; border-radius: 20px; font-weight: 600;
+		}
+		.pricing-card h3 { font-family: 'Playfair Display', serif; font-size: 22px; color: #142c44; margin-bottom: 6px; }
+		.pricing-card .price-desc { color: #6a7d94; font-size: 13.5px; margin-bottom: 22px; }
+		.pricing-card .price-row { display: flex; align-items: baseline; gap: 6px; margin-bottom: 26px; }
+		.pricing-card .price-amount {
+			font-family: 'Playfair Display', serif;
+			font-size: 52px; font-weight: 700; color: #142c44; line-height: 1;
+		}
+		.pricing-card .price-currency { font-size: 18px; color: #4a5a72; font-weight: 600; }
+		.pricing-card ul { list-style: none; padding: 0; margin: 0 0 28px; }
+		.pricing-card ul li { font-size: 14.5px; color: #4a5a72; padding: 8px 0; display: flex; align-items: flex-start; gap: 10px; }
+		.pricing-card ul li i { color: #1a6fb8; font-size: 18px; flex-shrink: 0; margin-top: 2px; }
+
+		/* === TESTIMONIALS ==================================== */
+		.web-testimonials {
+			padding: 90px 0;
+			background: #f7fafc;
+		}
+		.testimonial-card {
+			background: #fff;
+			border-radius: 14px;
+			padding: 32px 28px;
+			height: 100%;
+			border: 1px solid #e3edf3;
+			position: relative;
+		}
+		.testimonial-card::before {
+			content: "\201C";
+			position: absolute; top: 6px; left: 18px;
+			font-family: 'Playfair Display', serif;
+			font-size: 86px; line-height: 1; color: #8ec5e0; opacity: 0.4;
+		}
+		.testimonial-card p { font-size: 15px; color: #3a4a5e; line-height: 1.7; font-style: italic; margin-bottom: 22px; position: relative; }
+		.testimonial-card .t-author { display: flex; align-items: center; gap: 12px; }
+		.testimonial-card .t-avatar {
+			width: 46px; height: 46px; border-radius: 50%;
+			background: linear-gradient(135deg, #1a6fb8, #14b8a6);
+			color: #fff; display: flex; align-items: center; justify-content: center;
+			font-family: 'Playfair Display', serif; font-weight: 600; font-size: 18px;
+		}
+		.testimonial-card .t-name { font-weight: 700; color: #142c44; }
+		.testimonial-card .t-event { font-size: 12.5px; color: #6a7d94; letter-spacing: 1px; text-transform: uppercase; }
+		.testimonial-card .stars { color: #f5b840; margin-bottom: 8px; }
+
+		/* === FAQ ============================================= */
+		.web-faq { padding: 90px 0; background: #ffffff; }
+		.faq-item {
+			border-bottom: 1px solid #e3edf3;
+			padding: 22px 0;
+			cursor: pointer;
+		}
+		.faq-item summary {
+			list-style: none;
+			font-family: 'Playfair Display', serif;
+			font-size: 19px; font-weight: 600; color: #142c44;
+			display: flex; justify-content: space-between; align-items: center;
+			gap: 16px;
+		}
+		.faq-item summary::-webkit-details-marker { display: none; }
+		.faq-item summary::after {
+			content: "+"; flex-shrink: 0;
+			width: 32px; height: 32px; border-radius: 50%;
+			background: linear-gradient(135deg, #1a6fb8, #14b8a6);
+			color: #fff; display: flex; align-items: center; justify-content: center;
+			font-size: 22px; transition: transform 0.3s ease;
+		}
+		.faq-item[open] summary::after { content: "−"; transform: rotate(180deg); }
+		.faq-item .answer {
+			margin-top: 14px; font-size: 15px; color: #4a5a72; line-height: 1.7;
+		}
+		.faq-item .answer a { color: #1a6fb8; font-weight: 600; }
+
+		/* === CTA BANNER ====================================== */
+		.web-cta-banner {
+			padding: 80px 0;
+			background: linear-gradient(135deg, #1a6fb8 0%, #2989d8 50%, #14b8a6 100%);
+			color: #fff; text-align: center;
+		}
+		.web-cta-banner h2 {
+			font-family: 'Playfair Display', serif;
+			font-size: 42px; font-weight: 700;
+			margin-bottom: 18px;
+			color: #fff;
+		}
+		.web-cta-banner p { font-size: 18px; opacity: 0.92; max-width: 620px; margin: 0 auto 30px; }
+		.web-cta-banner .btn-web-primary {
+			background: #fff; color: #1a6fb8 !important;
+			box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+		}
+		.web-cta-banner .btn-web-primary:hover { color: #142c44 !important; }
+		.web-cta-banner .btn-web-ghost {
+			border-color: #fff; color: #fff !important;
+		}
+		.web-cta-banner .btn-web-ghost:hover { background: #fff; color: #1a6fb8 !important; }
+
+		/* === RESPONSIVE ====================================== */
+		@media (max-width: 991.98px) {
+			.web-hero { padding: 80px 0 40px; }
+			.web-hero h1 { font-size: 42px; }
+			.hero-cards { height: 460px; margin-top: 40px; }
+			.hero-cards .float-card.f1, .hero-cards .float-card.f2, .hero-cards .float-card.f3 { width: 210px; }
+			.gallery-grid { grid-template-columns: repeat(2, 1fr); }
+			.section-title { font-size: 34px; }
+			.process-step::after { display: none; }
+		}
+		@media (max-width: 575.98px) {
+			.web-hero h1 { font-size: 34px; }
+			.web-hero .lead { font-size: 16px; }
+			.gallery-grid { grid-template-columns: 1fr; }
+			.section-title { font-size: 28px; }
+			.web-cta-banner h2 { font-size: 30px; }
+			.stat-block .stat-num { font-size: 42px; }
+			.pricing-card { padding: 32px 22px; }
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+	<!-- Schema.org JSON-LD ============================================== -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Service",
+		"serviceType": "Изработка на уебсайт за малък бизнес",
+		"provider": {
+			"@type": "Organization",
+			"name": "Bulgar Solution",
+			"url": "https://bloodstriker88.github.io/bulgarsolution/",
+			"telephone": "+359895245290",
+			"email": "bulgarsolution@gmail.com",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Варна",
+				"addressCountry": "BG"
+			}
+		},
+		"areaServed": "BG",
+		"description": "Изработка на бърз, мобилен и SEO готов уебсайт за малък бизнес — WordPress или статичен HTML5. Готов сайт за 7-10 дни.",
+		"offers": {
+			"@type": "AggregateOffer",
+			"priceCurrency": "EUR",
+			"lowPrice": "200",
+			"highPrice": "950",
+			"offerCount": 3
+		}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{"@type":"ListItem","position":1,"name":"Начало","item":"https://bloodstriker88.github.io/bulgarsolution/index.html"},
+			{"@type":"ListItem","position":2,"name":"Дизайн","item":"https://bloodstriker88.github.io/bulgarsolution/rs-demo-particles-effects.html"},
+			{"@type":"ListItem","position":3,"name":"Уеб сайтове","item":"https://bloodstriker88.github.io/bulgarsolution/ueb-sajtove-bs.html"}
+		]
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{"@type":"Question","name":"Колко струва изработката на сайт?","acceptedAnswer":{"@type":"Answer","text":"Цените започват от 200 евро за визитка сайт до 5 страници. Бизнес пакетът с блог, многоезичност и базов SEO е 500 евро. Pro пакетът с e-commerce и speed optimization е 950 евро."}},
+			{"@type":"Question","name":"Колко време ще отнеме изработката?","acceptedAnswer":{"@type":"Answer","text":"Стандартен сайт е готов за 7-10 работни дни. По-сложни проекти с онлайн магазин или персонализиран дизайн отнемат до 3 седмици. Винаги уточняваме срока преди старт."}},
+			{"@type":"Question","name":"Включен ли е хостинг и домейн?","acceptedAnswer":{"@type":"Answer","text":"Препоръчваме надежден български или европейски хостинг и помагаме с регистрацията на домейн (.bg, .com, .eu). Самият хостинг и домейн се заплащат отделно — обикновено 30-60 евро на година общо."}},
+			{"@type":"Question","name":"Ще е ли мобилен сайтът?","acceptedAnswer":{"@type":"Answer","text":"Абсолютно. Всички наши сайтове се изработват по mobile-first принцип — първо мислим за телефона, после за десктопа. Над 70% от посетителите ви ще са на мобилно устройство."}},
+			{"@type":"Question","name":"Поддържате ли след стартиране?","acceptedAnswer":{"@type":"Answer","text":"Да. Business пакетът включва 1 месец безплатна поддръжка, Pro пакетът — 3 месеца. След това предлагаме абонаментна поддръжка от 30 евро на месец — обновяване, бекъп, защита и малки промени."}},
+			{"@type":"Question","name":"Какво е WordPress и защо го предлагате?","acceptedAnswer":{"@type":"Answer","text":"WordPress е най-популярната платформа за уебсайтове в света — над 40% от интернет работи на нея. Дава ви лесен админ панел, в който сами добавяте новини, снимки и продукти, без да викате програмист за всяка промяна."}},
+			{"@type":"Question","name":"Ще съм ли SEO готов?","acceptedAnswer":{"@type":"Answer","text":"Да. Всички сайтове получават базова SEO настройка — мета тагове, sitemap.xml, robots.txt, оптимизирани заглавия, schema разметка и Google Search Console интеграция. За по-агресивна SEO кампания вижте нашите отделни SEO услуги."}},
+			{"@type":"Question","name":"Може ли по-късно да добавим онлайн магазин?","acceptedAnswer":{"@type":"Answer","text":"Разбира се. Pro пакетът идва вече e-commerce ready. Ако започнете с Starter или Business, можем по всяко време да добавим WooCommerce магазин с продукти, кошница и плащане с карта."}}
+		]
+	}
+	</script>
+</head>
+
+<body class="stretched">
+
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header transparent-header" data-sticky-class="not-dark">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row">
+
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" srcset="images/bs/bs-logo-better-smaller.webp, images/bs-logo-better@2x.webp" src="images/bs/bs-logo-better@2x.webp" alt="Bulgar Solution">
+								<img class="logo-dark"    srcset="images/bs/bs-logo-better-smaller.webp, images/bs-logo-better@2x.webp 2x" src="images/bs/bs-logo-better@2x.webp" alt="Bulgar Solution">
+							</a>
+						</div>
+
+						<div class="header-misc">
+							<div id="top-search" class="header-misc-icon">
+								<a href="#" id="top-search-trigger"><i class="uil uil-search"></i><i class="bi-x-lg"></i></a>
+							</div>
+						</div>
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<nav class="primary-menu">
+							<ul class="menu-container">
+								<li class="menu-item"><a class="menu-link" href="index.html"><div>Начало</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="about-bs.html"><div>За Нас</div></a></li>
+								<li class="menu-item"><a class="menu-link" href="services-2-bs.html"><div>Услуги</div></a></li>
+								<li class="menu-item mega-menu"><a class="menu-link" href="index.html#proektite-homepage"><div>Портфолио</div></a></li>
+								<li class="menu-item"><a class="menu-link currentpageu" href="rs-demo-particles-effects.html"><div>Дизайн</div></a></li>
+								<li class="menu-item mega-menu"><a class="menu-link" href="contact-5-recaptcha-bs.html"><div>Контакт</div></a></li>
+							</ul>
+						</nav>
+
+						<form class="top-search-form" action="search.html" method="get">
+							<input type="text" name="q" class="form-control" value="" placeholder="Напиши и Натисни Ентър.." autocomplete="off">
+						</form>
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		<!-- HERO ============================================== -->
+		<section class="web-hero">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<span class="section-eyebrow">Уеб сайтове · 2026</span>
+						<h1>Уебсайт, който <span class="accent">превръща посетителите в клиенти</span></h1>
+						<p class="lead">Бърз, мобилен и SEO готов уебсайт за вашия малък бизнес — ресторант, салон, IT магазин, фитнес студио, адвокатска кантора, имотна агенция или онлайн магазин. Готов за 7-10 дни. Без техническа главоблъсканица — ние се грижим за хостинг, домейн, дизайн и поддръжка.</p>
+						<div class="hero-cta">
+							<a href="contact-5-recaptcha-bs.html" class="btn-web-primary">Безплатна консултация</a>
+							<a href="#gallery" class="btn-web-ghost">Виж примери</a>
+						</div>
+						<div class="hero-meta">
+							<div class="meta-item"><i class="bi-lightning-charge-fill"></i> Под 1.5s loading</div>
+							<div class="meta-item"><i class="bi-phone"></i> Mobile-first</div>
+							<div class="meta-item"><i class="bi-search"></i> Готов за SEO</div>
+							<div class="meta-item"><i class="bi-calendar-check"></i> 7-10 дни</div>
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="hero-cards" aria-hidden="true">
+							<!-- Floating card 1: Restaurant browser mockup -->
+							<div class="float-card f1">
+								<svg viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient id="h1heroBg" x1="0" y1="0" x2="0" y2="1">
+											<stop offset="0" stop-color="#fdf6ec"/><stop offset="1" stop-color="#f5e1c0"/>
+										</linearGradient>
+									</defs>
+									<!-- Browser chrome -->
+									<rect width="280" height="380" fill="#ffffff"/>
+									<rect width="280" height="28" fill="#142c44"/>
+									<circle cx="14" cy="14" r="4" fill="#ff5f57"/>
+									<circle cx="28" cy="14" r="4" fill="#febc2e"/>
+									<circle cx="42" cy="14" r="4" fill="#28c840"/>
+									<rect x="64" y="6" width="200" height="16" rx="3" fill="#1a3a5c"/>
+									<text x="74" y="17" font-family="Lato, sans-serif" font-size="9" fill="#7fd1c8">restorant-zora.bg</text>
+									<!-- Hero image -->
+									<rect x="0" y="28" width="280" height="130" fill="url(#h1heroBg)"/>
+									<g transform="translate(140, 90)" opacity="0.85">
+										<path d="M-30,-12 Q-22,-22 -10,-18 Q0,-25 12,-18 Q24,-22 32,-12 Q34,0 28,8 L-26,8 Q-32,0 -30,-12 Z" fill="#c44e3c"/>
+										<rect x="-20" y="8" width="40" height="20" fill="#7a3825" rx="2"/>
+									</g>
+									<text x="140" y="140" text-anchor="middle" font-family="Playfair Display, serif" font-style="italic" font-size="16" fill="#fff" font-weight="700">Ресторант "Зора"</text>
+									<!-- Body content -->
+									<text x="20" y="185" font-family="Lato, sans-serif" font-size="9" fill="#1a6fb8" letter-spacing="2">МЕНЮ</text>
+									<rect x="20" y="195" width="240" height="1" fill="#e3edf3"/>
+									<text x="20" y="215" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Шопска салата</text>
+									<text x="240" y="215" text-anchor="end" font-family="Lato, sans-serif" font-size="10" fill="#1a6fb8" font-weight="700">8 лв</text>
+									<text x="20" y="235" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Кебапче с гарнитура</text>
+									<text x="240" y="235" text-anchor="end" font-family="Lato, sans-serif" font-size="10" fill="#1a6fb8" font-weight="700">14 лв</text>
+									<text x="20" y="255" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Пържола от свинско</text>
+									<text x="240" y="255" text-anchor="end" font-family="Lato, sans-serif" font-size="10" fill="#1a6fb8" font-weight="700">22 лв</text>
+									<!-- CTA button -->
+									<g transform="translate(140, 310)">
+										<rect x="-90" y="-18" width="180" height="36" rx="18" fill="#1a6fb8"/>
+										<text y="5" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#fff" letter-spacing="2" font-weight="700">РЕЗЕРВИРАЙ МАСА →</text>
+									</g>
+								</svg>
+							</div>
+
+							<!-- Floating card 2: Hair salon -->
+							<div class="float-card f2">
+								<svg viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg">
+									<defs>
+										<linearGradient id="h2heroBg" x1="0" y1="0" x2="0" y2="1">
+											<stop offset="0" stop-color="#f8e8ee"/><stop offset="1" stop-color="#fbeae3"/>
+										</linearGradient>
+									</defs>
+									<rect width="280" height="380" fill="#ffffff"/>
+									<rect width="280" height="28" fill="#142c44"/>
+									<circle cx="14" cy="14" r="4" fill="#ff5f57"/>
+									<circle cx="28" cy="14" r="4" fill="#febc2e"/>
+									<circle cx="42" cy="14" r="4" fill="#28c840"/>
+									<rect x="64" y="6" width="200" height="16" rx="3" fill="#1a3a5c"/>
+									<text x="74" y="17" font-family="Lato, sans-serif" font-size="9" fill="#7fd1c8">salon-bella.bg</text>
+
+									<rect x="0" y="28" width="280" height="120" fill="url(#h2heroBg)"/>
+									<text x="140" y="80" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="34" fill="#a85a78" font-weight="700">Bella</text>
+									<text x="140" y="105" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#7a4a5a" letter-spacing="4">SALON &amp; SPA</text>
+									<text x="140" y="130" text-anchor="middle" font-family="Lato, sans-serif" font-size="8" fill="#7a4a5a" letter-spacing="2">КРАСОТА И ЕЛЕГАНТНОСТ</text>
+
+									<text x="20" y="180" font-family="Lato, sans-serif" font-size="9" fill="#1a6fb8" letter-spacing="2">УСЛУГИ</text>
+									<rect x="20" y="190" width="240" height="1" fill="#e3edf3"/>
+									<g transform="translate(20, 205)">
+										<rect width="116" height="50" rx="6" fill="#f8e8ee"/>
+										<text x="58" y="22" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#a85a78" font-weight="700">Подстригване</text>
+										<text x="58" y="38" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#142c44" font-weight="700">35 лв</text>
+									</g>
+									<g transform="translate(144, 205)">
+										<rect width="116" height="50" rx="6" fill="#fbeae3"/>
+										<text x="58" y="22" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#a85a78" font-weight="700">Боядисване</text>
+										<text x="58" y="38" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#142c44" font-weight="700">от 60 лв</text>
+									</g>
+									<g transform="translate(140, 310)">
+										<rect x="-90" y="-18" width="180" height="36" rx="18" fill="#a85a78"/>
+										<text y="5" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#fff" letter-spacing="2" font-weight="700">ЗАПАЗИ ЧАС →</text>
+									</g>
+								</svg>
+							</div>
+
+							<!-- Floating card 3: E-shop -->
+							<div class="float-card f3">
+								<svg viewBox="0 0 280 380" xmlns="http://www.w3.org/2000/svg">
+									<rect width="280" height="380" fill="#ffffff"/>
+									<rect width="280" height="28" fill="#142c44"/>
+									<circle cx="14" cy="14" r="4" fill="#ff5f57"/>
+									<circle cx="28" cy="14" r="4" fill="#febc2e"/>
+									<circle cx="42" cy="14" r="4" fill="#28c840"/>
+									<rect x="64" y="6" width="200" height="16" rx="3" fill="#1a3a5c"/>
+									<text x="74" y="17" font-family="Lato, sans-serif" font-size="9" fill="#7fd1c8">barza-moda.bg</text>
+
+									<!-- Top bar with cart -->
+									<rect x="0" y="28" width="280" height="40" fill="#f7fafc"/>
+									<text x="20" y="53" font-family="Playfair Display, serif" font-size="14" font-weight="700" fill="#142c44">Бърза мода</text>
+									<g transform="translate(245, 48)">
+										<path d="M-8,-2 L8,-2 L6,6 L-6,6 Z M-6,-2 L-8,-6 L-12,-6" fill="none" stroke="#1a6fb8" stroke-width="1.5"/>
+										<circle cx="6" cy="-8" r="6" fill="#14b8a6"/>
+										<text x="6" y="-5" text-anchor="middle" font-family="Lato, sans-serif" font-size="7" fill="#fff" font-weight="700">3</text>
+									</g>
+									<!-- Product grid -->
+									<g transform="translate(20, 90)">
+										<rect width="115" height="90" rx="6" fill="#e0f2f5"/>
+										<rect x="20" y="15" width="75" height="50" rx="3" fill="#1a6fb8" opacity="0.3"/>
+										<text x="58" y="80" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#142c44" font-weight="700">Тениска · 29.99 лв</text>
+									</g>
+									<g transform="translate(145, 90)">
+										<rect width="115" height="90" rx="6" fill="#fbeae3"/>
+										<rect x="20" y="15" width="75" height="50" rx="3" fill="#c44e3c" opacity="0.3"/>
+										<text x="58" y="80" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#142c44" font-weight="700">Рокля · 79 лв</text>
+									</g>
+									<g transform="translate(20, 190)">
+										<rect width="115" height="90" rx="6" fill="#f7eed4"/>
+										<rect x="20" y="15" width="75" height="50" rx="3" fill="#c2a85a" opacity="0.3"/>
+										<text x="58" y="80" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#142c44" font-weight="700">Обувки · 119 лв</text>
+									</g>
+									<g transform="translate(145, 190)">
+										<rect width="115" height="90" rx="6" fill="#e0f2f5"/>
+										<rect x="20" y="15" width="75" height="50" rx="3" fill="#14b8a6" opacity="0.3"/>
+										<text x="58" y="80" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#142c44" font-weight="700">Раница · 65 лв</text>
+									</g>
+									<g transform="translate(140, 330)">
+										<rect x="-90" y="-18" width="180" height="36" rx="18" fill="#14b8a6"/>
+										<text y="5" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#fff" letter-spacing="2" font-weight="700">КЪМ КОЛИЧКА →</text>
+									</g>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- INTRO COPY (SEO content) ============================ -->
+		<section style="padding: 70px 0; background: #ffffff;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-9 text-center">
+						<span class="section-eyebrow">Уеб сайтове за малък бизнес</span>
+						<h2 class="section-title">Сайт, който работи за вас 24 часа</h2>
+						<p style="font-size: 17.5px; color: #3a4a5e; line-height: 1.75;">
+							<strong>Изработката на уебсайт</strong> днес не е лукс, а основа на всеки сериозен бизнес. Когато потенциален клиент Ви потърси в Google, първото му впечатление за вашата работа идва от сайта — и решава дали ще се обади или ще цъкне следващия конкурент. В <a href="about-bs.html"><strong>Bulgar Solution</strong></a> правим <strong>фирмени уебсайтове</strong> и <strong>онлайн магазини</strong> за малки бизнеси в България — ресторанти, салони, IT магазини, фитнес студия, адвокатски кантори, имотни агенции и e-shops.
+						</p>
+						<p style="font-size: 16px; color: #4a5a72; line-height: 1.75; margin-top: 18px;">
+							Без значение дали ви трябва <strong>визитка сайт</strong>, <strong>WordPress блог</strong>, <strong>responsive корпоративен сайт</strong> или пълноценен <strong>онлайн магазин</strong> — ние се грижим за всичко: хостинг, домейн, дизайн, разработка, базов SEO и поддръжка. Не е нужно да си разбирате от технология. Ако искате да видите още от нашата работа, разгледайте <a href="services-2-bs.html"><strong>пълните уеб услуги</strong></a>, нашето <a href="rs-demo-particles-effects.html"><strong>дизайн портфолио</strong></a>, услугите ни за <a href="svatbeni-pokani-bs.html"><strong>дигитални сватбени покани</strong></a> или ако ви трябва бранд от нулата — <a href="logo-dizayn-bs.html"><strong>лого дизайн</strong></a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- GALLERY ============================================ -->
+		<section id="gallery" class="web-gallery">
+			<div class="container">
+				<div class="text-center">
+					<span class="section-eyebrow">Галерия</span>
+					<h2 class="section-title">Реални сайтове за реални бизнеси</h2>
+					<p class="section-lead">Шест примера от различни ниши. Всеки сайт е напълно персонализиран — цветове, шрифт, структура и съдържание са по ваш избор.</p>
+				</div>
+
+				<div class="gallery-grid">
+					<!-- Card 1: Restaurant -->
+					<article class="gallery-card">
+						<svg viewBox="0 0 380 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Уебсайт на ресторант Зора">
+							<defs>
+								<linearGradient id="g1bg" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#fdf6ec"/><stop offset="1" stop-color="#f5e1c0"/>
+								</linearGradient>
+							</defs>
+							<rect width="380" height="540" fill="#ffffff"/>
+							<!-- Browser chrome -->
+							<rect width="380" height="34" fill="#142c44"/>
+							<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+							<circle cx="34" cy="17" r="5" fill="#febc2e"/>
+							<circle cx="50" cy="17" r="5" fill="#28c840"/>
+							<rect x="78" y="8" width="280" height="18" rx="3" fill="#1a3a5c"/>
+							<text x="90" y="20" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8">restorant-zora.bg</text>
+
+							<!-- Hero image -->
+							<rect x="0" y="34" width="380" height="190" fill="url(#g1bg)"/>
+							<g transform="translate(190, 110)" opacity="0.9">
+								<path d="M-44,-18 Q-32,-32 -14,-26 Q0,-36 14,-26 Q32,-32 44,-18 Q48,0 40,12 L-40,12 Q-48,0 -44,-18 Z" fill="#c44e3c"/>
+								<rect x="-26" y="12" width="52" height="26" fill="#7a3825" rx="3"/>
+							</g>
+							<text x="190" y="195" text-anchor="middle" font-family="Playfair Display, serif" font-style="italic" font-size="22" fill="#fff" font-weight="700">Ресторант "Зора"</text>
+
+							<!-- Menu section -->
+							<text x="30" y="260" font-family="Lato, sans-serif" font-size="11" fill="#1a6fb8" letter-spacing="3" font-weight="700">НАШЕТО МЕНЮ</text>
+							<rect x="30" y="270" width="320" height="1" fill="#e3edf3"/>
+
+							<text x="30" y="298" font-family="Lato, sans-serif" font-size="13" fill="#142c44" font-weight="700">Шопска салата</text>
+							<text x="30" y="313" font-family="Lato, sans-serif" font-size="10" fill="#6a7d94">домати, краставици, сирене</text>
+							<text x="350" y="298" text-anchor="end" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">8.00 лв</text>
+
+							<text x="30" y="345" font-family="Lato, sans-serif" font-size="13" fill="#142c44" font-weight="700">Кебапче с гарнитура</text>
+							<text x="30" y="360" font-family="Lato, sans-serif" font-size="10" fill="#6a7d94">2 бр + пържени картофи</text>
+							<text x="350" y="345" text-anchor="end" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">14.00 лв</text>
+
+							<text x="30" y="392" font-family="Lato, sans-serif" font-size="13" fill="#142c44" font-weight="700">Пържола от свинско</text>
+							<text x="30" y="407" font-family="Lato, sans-serif" font-size="10" fill="#6a7d94">жулиен с домашна салца</text>
+							<text x="350" y="392" text-anchor="end" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">22.00 лв</text>
+
+							<!-- CTA -->
+							<g transform="translate(190, 470)">
+								<rect x="-130" y="-22" width="260" height="44" rx="22" fill="#1a6fb8"/>
+								<text y="6" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#fff" letter-spacing="2" font-weight="700">РЕЗЕРВИРАЙ МАСА →</text>
+							</g>
+						</svg>
+						<div class="gc-meta"><h4>Ресторант "Зора"</h4><span>Ресторант · меню &amp; резервации</span></div>
+					</article>
+
+					<!-- Card 2: Hair salon -->
+					<article class="gallery-card">
+						<svg viewBox="0 0 380 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Уебсайт на фризьорски салон Bella">
+							<defs>
+								<linearGradient id="g2bg" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#f8e8ee"/><stop offset="1" stop-color="#fbeae3"/>
+								</linearGradient>
+							</defs>
+							<rect width="380" height="540" fill="#ffffff"/>
+							<rect width="380" height="34" fill="#142c44"/>
+							<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+							<circle cx="34" cy="17" r="5" fill="#febc2e"/>
+							<circle cx="50" cy="17" r="5" fill="#28c840"/>
+							<rect x="78" y="8" width="280" height="18" rx="3" fill="#1a3a5c"/>
+							<text x="90" y="20" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8">salon-bella.bg</text>
+
+							<rect x="0" y="34" width="380" height="180" fill="url(#g2bg)"/>
+							<text x="190" y="120" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="56" fill="#a85a78" font-weight="700">Bella</text>
+							<text x="190" y="150" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7a4a5a" letter-spacing="6">SALON &amp; SPA</text>
+							<text x="190" y="180" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#7a4a5a" letter-spacing="3">КРАСОТА И ЕЛЕГАНТНОСТ ОТ 2010</text>
+
+							<text x="30" y="252" font-family="Lato, sans-serif" font-size="11" fill="#1a6fb8" letter-spacing="3" font-weight="700">НАШИТЕ УСЛУГИ</text>
+							<rect x="30" y="262" width="320" height="1" fill="#e3edf3"/>
+
+							<g transform="translate(30, 285)">
+								<rect width="155" height="68" rx="8" fill="#f8e8ee"/>
+								<text x="78" y="28" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#a85a78" font-weight="700">Подстригване</text>
+								<text x="78" y="50" text-anchor="middle" font-family="Playfair Display, serif" font-size="16" fill="#142c44" font-weight="700">35 лв</text>
+							</g>
+							<g transform="translate(195, 285)">
+								<rect width="155" height="68" rx="8" fill="#fbeae3"/>
+								<text x="78" y="28" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#a85a78" font-weight="700">Боядисване</text>
+								<text x="78" y="50" text-anchor="middle" font-family="Playfair Display, serif" font-size="16" fill="#142c44" font-weight="700">от 60 лв</text>
+							</g>
+							<g transform="translate(30, 363)">
+								<rect width="155" height="68" rx="8" fill="#fbeae3"/>
+								<text x="78" y="28" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#a85a78" font-weight="700">Маникюр</text>
+								<text x="78" y="50" text-anchor="middle" font-family="Playfair Display, serif" font-size="16" fill="#142c44" font-weight="700">25 лв</text>
+							</g>
+							<g transform="translate(195, 363)">
+								<rect width="155" height="68" rx="8" fill="#f8e8ee"/>
+								<text x="78" y="28" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#a85a78" font-weight="700">Спа пакет</text>
+								<text x="78" y="50" text-anchor="middle" font-family="Playfair Display, serif" font-size="16" fill="#142c44" font-weight="700">90 лв</text>
+							</g>
+
+							<g transform="translate(190, 480)">
+								<rect x="-130" y="-22" width="260" height="44" rx="22" fill="#a85a78"/>
+								<text y="6" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#fff" letter-spacing="2" font-weight="700">ЗАПАЗИ ЧАС ОНЛАЙН →</text>
+							</g>
+						</svg>
+						<div class="gc-meta"><h4>Фризьорски салон "Bella"</h4><span>Салон · услуги &amp; онлайн запазване</span></div>
+					</article>
+
+					<!-- Card 3: Pulse Studio fitness -->
+					<article class="gallery-card">
+						<svg viewBox="0 0 380 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Уебсайт на Pulse Studio фитнес">
+							<defs>
+								<linearGradient id="g3bg" x1="0" y1="0" x2="1" y2="1">
+									<stop offset="0" stop-color="#0f2238"/><stop offset="1" stop-color="#14b8a6"/>
+								</linearGradient>
+							</defs>
+							<rect width="380" height="540" fill="#ffffff"/>
+							<rect width="380" height="34" fill="#142c44"/>
+							<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+							<circle cx="34" cy="17" r="5" fill="#febc2e"/>
+							<circle cx="50" cy="17" r="5" fill="#28c840"/>
+							<rect x="78" y="8" width="280" height="18" rx="3" fill="#1a3a5c"/>
+							<text x="90" y="20" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8">pulse-studio.bg</text>
+
+							<rect x="0" y="34" width="380" height="180" fill="url(#g3bg)"/>
+							<g transform="translate(190, 105)" opacity="0.85">
+								<path d="M-50,0 L-30,0 L-22,-18 L-8,18 L4,-22 L14,8 L22,0 L50,0" stroke="#7fd1c8" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+							<text x="190" y="155" text-anchor="middle" font-family="Poppins, sans-serif" font-size="28" fill="#fff" font-weight="800" letter-spacing="2">PULSE STUDIO</text>
+							<text x="190" y="180" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8" letter-spacing="6">FITNESS · YOGA · CROSSFIT</text>
+
+							<!-- Schedule -->
+							<text x="30" y="252" font-family="Lato, sans-serif" font-size="11" fill="#1a6fb8" letter-spacing="3" font-weight="700">ГРАФИК ЗА СЕДМИЦАТА</text>
+							<rect x="30" y="262" width="320" height="1" fill="#e3edf3"/>
+
+							<g transform="translate(30, 280)">
+								<rect width="320" height="32" rx="6" fill="#f7fafc"/>
+								<text x="14" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">ПОН 18:00</text>
+								<text x="100" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44">CrossFit · Иван</text>
+								<rect x="240" y="9" width="68" height="14" rx="7" fill="#14b8a6"/>
+								<text x="274" y="19" text-anchor="middle" font-family="Lato, sans-serif" font-size="8" fill="#fff" font-weight="700">ЗАПИШИ СЕ</text>
+							</g>
+							<g transform="translate(30, 320)">
+								<rect width="320" height="32" rx="6" fill="#f7fafc"/>
+								<text x="14" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">ВТО 19:30</text>
+								<text x="100" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44">Йога · Мария</text>
+								<rect x="240" y="9" width="68" height="14" rx="7" fill="#14b8a6"/>
+								<text x="274" y="19" text-anchor="middle" font-family="Lato, sans-serif" font-size="8" fill="#fff" font-weight="700">ЗАПИШИ СЕ</text>
+							</g>
+							<g transform="translate(30, 360)">
+								<rect width="320" height="32" rx="6" fill="#f7fafc"/>
+								<text x="14" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">СРЯ 18:00</text>
+								<text x="100" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44">HIIT · Стоян</text>
+								<rect x="240" y="9" width="68" height="14" rx="7" fill="#6a7d94"/>
+								<text x="274" y="19" text-anchor="middle" font-family="Lato, sans-serif" font-size="8" fill="#fff" font-weight="700">ПЪЛНО</text>
+							</g>
+							<g transform="translate(30, 400)">
+								<rect width="320" height="32" rx="6" fill="#f7fafc"/>
+								<text x="14" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">ЧЕТ 19:00</text>
+								<text x="100" y="20" font-family="Lato, sans-serif" font-size="10" fill="#142c44">Pilates · Елена</text>
+								<rect x="240" y="9" width="68" height="14" rx="7" fill="#14b8a6"/>
+								<text x="274" y="19" text-anchor="middle" font-family="Lato, sans-serif" font-size="8" fill="#fff" font-weight="700">ЗАПИШИ СЕ</text>
+							</g>
+							<g transform="translate(190, 480)">
+								<rect x="-130" y="-22" width="260" height="44" rx="22" fill="#14b8a6"/>
+								<text y="6" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#fff" letter-spacing="2" font-weight="700">ЗАПОЧНИ БЕЗПЛАТНО →</text>
+							</g>
+						</svg>
+						<div class="gc-meta"><h4>Pulse Studio</h4><span>Фитнес · график &amp; запис</span></div>
+					</article>
+
+					<!-- Card 4: Lawyers -->
+					<article class="gallery-card">
+						<svg viewBox="0 0 380 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Уебсайт на адвокатска кантора Петрови и партньори">
+							<defs>
+								<linearGradient id="g4bg" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#142c44"/><stop offset="1" stop-color="#1a3a5c"/>
+								</linearGradient>
+							</defs>
+							<rect width="380" height="540" fill="#ffffff"/>
+							<rect width="380" height="34" fill="#142c44"/>
+							<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+							<circle cx="34" cy="17" r="5" fill="#febc2e"/>
+							<circle cx="50" cy="17" r="5" fill="#28c840"/>
+							<rect x="78" y="8" width="280" height="18" rx="3" fill="#1a3a5c"/>
+							<text x="90" y="20" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8">petrovi-law.bg</text>
+
+							<rect x="0" y="34" width="380" height="170" fill="url(#g4bg)"/>
+							<!-- Scales of justice -->
+							<g transform="translate(190, 90)" opacity="0.95">
+								<line x1="0" y1="-26" x2="0" y2="14" stroke="#c2a85a" stroke-width="2"/>
+								<line x1="-30" y1="-26" x2="30" y2="-26" stroke="#c2a85a" stroke-width="2"/>
+								<circle cx="-30" cy="-10" r="9" fill="none" stroke="#c2a85a" stroke-width="1.5"/>
+								<circle cx="30" cy="-10" r="9" fill="none" stroke="#c2a85a" stroke-width="1.5"/>
+								<rect x="-12" y="14" width="24" height="4" fill="#c2a85a"/>
+							</g>
+							<text x="190" y="160" text-anchor="middle" font-family="Playfair Display, serif" font-size="22" fill="#fff" font-weight="700">Петрови &amp; партньори</text>
+							<text x="190" y="185" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#c2a85a" letter-spacing="5">АДВОКАТСКА КАНТОРА · СОФИЯ</text>
+
+							<text x="30" y="240" font-family="Lato, sans-serif" font-size="11" fill="#1a6fb8" letter-spacing="3" font-weight="700">ПРАВНИ ОБЛАСТИ</text>
+							<rect x="30" y="250" width="320" height="1" fill="#e3edf3"/>
+
+							<g transform="translate(30, 268)">
+								<rect width="155" height="56" rx="6" fill="#f7fafc" stroke="#e3edf3"/>
+								<rect x="14" y="14" width="22" height="22" rx="3" fill="#142c44"/>
+								<text x="44" y="22" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Търговско</text>
+								<text x="44" y="38" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">право</text>
+							</g>
+							<g transform="translate(195, 268)">
+								<rect width="155" height="56" rx="6" fill="#f7fafc" stroke="#e3edf3"/>
+								<rect x="14" y="14" width="22" height="22" rx="3" fill="#142c44"/>
+								<text x="44" y="22" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Семейно</text>
+								<text x="44" y="38" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">право</text>
+							</g>
+							<g transform="translate(30, 334)">
+								<rect width="155" height="56" rx="6" fill="#f7fafc" stroke="#e3edf3"/>
+								<rect x="14" y="14" width="22" height="22" rx="3" fill="#142c44"/>
+								<text x="44" y="22" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Имотно</text>
+								<text x="44" y="38" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">право</text>
+							</g>
+							<g transform="translate(195, 334)">
+								<rect width="155" height="56" rx="6" fill="#f7fafc" stroke="#e3edf3"/>
+								<rect x="14" y="14" width="22" height="22" rx="3" fill="#142c44"/>
+								<text x="44" y="22" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Трудово</text>
+								<text x="44" y="38" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">право</text>
+							</g>
+
+							<text x="190" y="425" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#6a7d94">Безплатна първа консултация</text>
+							<g transform="translate(190, 470)">
+								<rect x="-130" y="-22" width="260" height="44" rx="22" fill="#c2a85a"/>
+								<text y="6" text-anchor="middle" font-family="Lato, sans-serif" font-size="13" fill="#142c44" letter-spacing="2" font-weight="700">СВЪРЖИ СЕ С АДВОКАТ →</text>
+							</g>
+						</svg>
+						<div class="gc-meta"><h4>Петрови &amp; партньори</h4><span>Адвокатска кантора · право &amp; контакт</span></div>
+					</article>
+
+					<!-- Card 5: Real Estate -->
+					<article class="gallery-card">
+						<svg viewBox="0 0 380 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Уебсайт на имотна агенция Дом">
+							<defs>
+								<linearGradient id="g5bg" x1="0" y1="0" x2="0" y2="1">
+									<stop offset="0" stop-color="#1a6fb8"/><stop offset="1" stop-color="#14b8a6"/>
+								</linearGradient>
+							</defs>
+							<rect width="380" height="540" fill="#ffffff"/>
+							<rect width="380" height="34" fill="#142c44"/>
+							<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+							<circle cx="34" cy="17" r="5" fill="#febc2e"/>
+							<circle cx="50" cy="17" r="5" fill="#28c840"/>
+							<rect x="78" y="8" width="280" height="18" rx="3" fill="#1a3a5c"/>
+							<text x="90" y="20" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8">imoti-dom.bg</text>
+
+							<rect x="0" y="34" width="380" height="120" fill="url(#g5bg)"/>
+							<g transform="translate(190, 80)">
+								<path d="M-26,8 L-26,-8 L0,-26 L26,-8 L26,8 Z" fill="#fff"/>
+								<rect x="-12" y="-2" width="10" height="10" fill="#1a6fb8"/>
+								<rect x="2" y="-2" width="10" height="10" fill="#1a6fb8"/>
+							</g>
+							<text x="190" y="135" text-anchor="middle" font-family="Playfair Display, serif" font-size="22" fill="#fff" font-weight="700">Имотна агенция "Дом"</text>
+
+							<!-- Search bar -->
+							<g transform="translate(30, 175)">
+								<rect width="320" height="36" rx="18" fill="#f7fafc" stroke="#e3edf3"/>
+								<text x="20" y="23" font-family="Lato, sans-serif" font-size="11" fill="#6a7d94">София · Двустаен · до 150 000 €</text>
+								<rect x="246" y="6" width="68" height="24" rx="12" fill="#1a6fb8"/>
+								<text x="280" y="22" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#fff" letter-spacing="1" font-weight="700">ТЪРСИ</text>
+							</g>
+
+							<!-- Property listings -->
+							<text x="30" y="248" font-family="Lato, sans-serif" font-size="11" fill="#1a6fb8" letter-spacing="3" font-weight="700">ОФЕРТИ</text>
+
+							<g transform="translate(30, 260)">
+								<rect width="155" height="118" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="68" rx="8" fill="#8ec5e0"/>
+								<rect x="36" y="32" width="84" height="32" fill="#1a6fb8" opacity="0.5" rx="3"/>
+								<text x="14" y="86" font-family="Lato, sans-serif" font-size="11" fill="#142c44" font-weight="700">Тристаен · Лозенец</text>
+								<text x="14" y="102" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">90 кв.м · ремонтиран</text>
+								<text x="14" y="114" font-family="Playfair Display, serif" font-size="13" fill="#1a6fb8" font-weight="700">189 000 €</text>
+							</g>
+							<g transform="translate(195, 260)">
+								<rect width="155" height="118" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="68" rx="8" fill="#7fd1c8"/>
+								<rect x="36" y="32" width="84" height="32" fill="#14b8a6" opacity="0.5" rx="3"/>
+								<text x="14" y="86" font-family="Lato, sans-serif" font-size="11" fill="#142c44" font-weight="700">Двустаен · Витоша</text>
+								<text x="14" y="102" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">68 кв.м · ново строителство</text>
+								<text x="14" y="114" font-family="Playfair Display, serif" font-size="13" fill="#1a6fb8" font-weight="700">128 000 €</text>
+							</g>
+							<g transform="translate(30, 388)">
+								<rect width="155" height="118" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="68" rx="8" fill="#fbeae3"/>
+								<rect x="36" y="32" width="84" height="32" fill="#c44e3c" opacity="0.4" rx="3"/>
+								<text x="14" y="86" font-family="Lato, sans-serif" font-size="11" fill="#142c44" font-weight="700">Къща · Бистрица</text>
+								<text x="14" y="102" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">220 кв.м · с двор</text>
+								<text x="14" y="114" font-family="Playfair Display, serif" font-size="13" fill="#1a6fb8" font-weight="700">320 000 €</text>
+							</g>
+							<g transform="translate(195, 388)">
+								<rect width="155" height="118" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="68" rx="8" fill="#f5e1c0"/>
+								<rect x="36" y="32" width="84" height="32" fill="#c2a85a" opacity="0.5" rx="3"/>
+								<text x="14" y="86" font-family="Lato, sans-serif" font-size="11" fill="#142c44" font-weight="700">Студио · Център</text>
+								<text x="14" y="102" font-family="Lato, sans-serif" font-size="9" fill="#6a7d94">42 кв.м · луксозно</text>
+								<text x="14" y="114" font-family="Playfair Display, serif" font-size="13" fill="#1a6fb8" font-weight="700">95 000 €</text>
+							</g>
+						</svg>
+						<div class="gc-meta"><h4>Имотна агенция "Дом"</h4><span>Имоти · оферти &amp; търсене</span></div>
+					</article>
+
+					<!-- Card 6: E-shop fashion -->
+					<article class="gallery-card">
+						<svg viewBox="0 0 380 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Онлайн магазин Бърза мода">
+							<rect width="380" height="540" fill="#ffffff"/>
+							<rect width="380" height="34" fill="#142c44"/>
+							<circle cx="18" cy="17" r="5" fill="#ff5f57"/>
+							<circle cx="34" cy="17" r="5" fill="#febc2e"/>
+							<circle cx="50" cy="17" r="5" fill="#28c840"/>
+							<rect x="78" y="8" width="280" height="18" rx="3" fill="#1a3a5c"/>
+							<text x="90" y="20" font-family="Lato, sans-serif" font-size="10" fill="#7fd1c8">barza-moda.bg</text>
+
+							<!-- Top nav with cart -->
+							<rect x="0" y="34" width="380" height="48" fill="#f7fafc"/>
+							<text x="30" y="64" font-family="Playfair Display, serif" font-size="20" font-weight="700" fill="#142c44">Бърза мода</text>
+							<text x="200" y="64" font-family="Lato, sans-serif" font-size="11" fill="#4a5a72">Жени · Мъже · Деца · Аксесоари</text>
+							<g transform="translate(335, 58)">
+								<path d="M-12,-2 L12,-2 L9,10 L-9,10 Z M-9,-2 L-12,-9 L-18,-9" fill="none" stroke="#1a6fb8" stroke-width="2"/>
+								<circle cx="9" cy="-12" r="9" fill="#14b8a6"/>
+								<text x="9" y="-9" text-anchor="middle" font-family="Lato, sans-serif" font-size="10" fill="#fff" font-weight="700">3</text>
+							</g>
+
+							<!-- Hero banner -->
+							<rect x="0" y="82" width="380" height="60" fill="#1a6fb8"/>
+							<text x="190" y="108" text-anchor="middle" font-family="Playfair Display, serif" font-size="18" fill="#fff" font-weight="700" font-style="italic">Лятна колекция 2026</text>
+							<text x="190" y="128" text-anchor="middle" font-family="Lato, sans-serif" font-size="11" fill="#7fd1c8" letter-spacing="3">— 30% ПРИ ПЪРВА ПОРЪЧКА —</text>
+
+							<!-- Product grid -->
+							<text x="30" y="172" font-family="Lato, sans-serif" font-size="11" fill="#1a6fb8" letter-spacing="3" font-weight="700">ПОПУЛЯРНИ ПРОДУКТИ</text>
+
+							<g transform="translate(30, 188)">
+								<rect width="155" height="158" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="110" rx="8" fill="#e0f2f5"/>
+								<rect x="38" y="20" width="80" height="74" rx="3" fill="#1a6fb8" opacity="0.3"/>
+								<text x="14" y="128" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Лятна тениска</text>
+								<text x="14" y="148" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">29.99 лв</text>
+							</g>
+							<g transform="translate(195, 188)">
+								<rect width="155" height="158" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="110" rx="8" fill="#fbeae3"/>
+								<rect x="38" y="20" width="80" height="74" rx="3" fill="#c44e3c" opacity="0.3"/>
+								<text x="14" y="128" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Цветна рокля</text>
+								<text x="14" y="148" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">79.00 лв</text>
+							</g>
+							<g transform="translate(30, 358)">
+								<rect width="155" height="158" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="110" rx="8" fill="#f5e1c0"/>
+								<rect x="38" y="20" width="80" height="74" rx="3" fill="#c2a85a" opacity="0.4"/>
+								<text x="14" y="128" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Кожени обувки</text>
+								<text x="14" y="148" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">119.00 лв</text>
+							</g>
+							<g transform="translate(195, 358)">
+								<rect width="155" height="158" rx="8" fill="#f7fafc"/>
+								<rect width="155" height="110" rx="8" fill="#e0f2f5"/>
+								<rect x="38" y="20" width="80" height="74" rx="3" fill="#14b8a6" opacity="0.4"/>
+								<text x="14" y="128" font-family="Lato, sans-serif" font-size="10" fill="#142c44" font-weight="700">Раница пътна</text>
+								<text x="14" y="148" font-family="Playfair Display, serif" font-size="14" fill="#1a6fb8" font-weight="700">65.00 лв</text>
+							</g>
+						</svg>
+						<div class="gc-meta"><h4>E-shop "Бърза мода"</h4><span>Онлайн магазин · WooCommerce</span></div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- FEATURES =========================================== -->
+		<section class="web-features">
+			<div class="container">
+				<div class="text-center mb-5">
+					<span class="section-eyebrow">Защо нашите сайтове</span>
+					<h2 class="section-title">Всичко, от което се нуждае един съвременен сайт</h2>
+					<p class="section-lead">От бързината до сигурността — всеки технически детайл е премислен. Вие просто давате насока, ние правим всичко останало.</p>
+				</div>
+
+				<div class="row col-mb-30">
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-phone"></i></div>
+							<h4>Mobile-first дизайн</h4>
+							<p>Първо мислим за телефона, после за десктопа. Над 70% от вашите посетители ще са на мобилно устройство — сайтът трябва да изглежда перфектно там.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-lightning-charge-fill"></i></div>
+							<h4>Под 1.5s loading</h4>
+							<p>Всеки наш сайт зарежда за под 1.5 секунди. Бавните сайтове губят 53% от посетителите — ние гарантираме скорост, която задържа клиента.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-search"></i></div>
+							<h4>Базов SEO</h4>
+							<p>Мета тагове, sitemap.xml, schema разметка и Google Search Console — всичко настроено от старт. Готов сте да индексирате.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-gear-fill"></i></div>
+							<h4>WordPress админ</h4>
+							<p>Лесен админ панел, в който сами добавяте новини, снимки и продукти. Не е нужно да викате програмист за всяка промяна.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-envelope-fill"></i></div>
+							<h4>Форма + Google Maps</h4>
+							<p>Контактна форма с имейл известия, интегрирана Google Maps карта до офиса ви и кликабилен телефонен номер за мобилните потребители.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-graph-up"></i></div>
+							<h4>Google Analytics</h4>
+							<p>Виждате колко души посещават сайта, откъде идват и какво гледат. Знание = по-добри решения за бизнеса ви.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-translate"></i></div>
+							<h4>Многоезичност готова</h4>
+							<p>Български, английски и трети език по избор — особено полезно ако работите с туристи или международни клиенти.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="feature-card">
+							<div class="fc-icon"><i class="bi-shield-lock-fill"></i></div>
+							<h4>SSL &amp; сигурност</h4>
+							<p>Безплатен SSL сертификат, защита срещу спам и автоматични бекъпи. Сайтът ви и данните на клиентите са в безопасност.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- INNOVATION (Speed-First Architecture) =============== -->
+		<section class="web-innovation">
+			<div class="container" style="position: relative; z-index: 1;">
+				<div class="row align-items-center">
+					<div class="col-lg-6 mb-5 mb-lg-0">
+						<span class="section-eyebrow">Speed-First Architecture · 2026</span>
+						<h2 class="section-title">Сайт под 1.5 секунди — без компромис</h2>
+						<p>Всеки наш сайт е оптимизиран за <strong>Google Core Web Vitals</strong> — официалните показатели, по които Google решава кой да класира по-високо. По-бърз сайт = повече клиенти, по-висок ранкинг и по-малко изоставени посещения. Ние не правим бавни сайтове. Никога.</p>
+
+						<ul class="innovation-list">
+							<li><i class="bi-image-fill"></i><span><strong>Lazy-loading изображения</strong>Снимките се зареждат само когато потребителят стигне до тях — спестява MB-и в първото зареждане.</span></li>
+							<li><i class="bi-code-slash"></i><span><strong>Минимизиран CSS &amp; JS</strong>Всеки байт има значение. Премахваме излишния код и компресираме това, което остане.</span></li>
+							<li><i class="bi-file-earmark-image-fill"></i><span><strong>WebP оптимизация</strong>Конвертираме всички снимки в съвременен WebP формат — до 70% по-малки от JPG, без загуба на качество.</span></li>
+							<li><i class="bi-globe2"></i><span><strong>CDN setup</strong>Сайтът ви се зарежда от най-близкия сървър до посетителя — независимо дали е във Варна, Виена или Ванкувър.</span></li>
+							<li><i class="bi-fonts"></i><span><strong>Оптимизирани шрифтове</strong>Само нужните стилове и тегла. Без 12 различни шрифта, които забавят зареждането.</span></li>
+							<li><i class="bi-speedometer2"></i><span><strong>Lighthouse 90+ score</strong>Всеки наш сайт минава с над 90 точки на Google Lighthouse тест — performance, accessibility, SEO.</span></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="phone-mockup">
+							<svg viewBox="0 0 280 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Lighthouse speedtest dashboard">
+								<defs>
+									<linearGradient id="phbgWeb" x1="0" y1="0" x2="0" y2="1">
+										<stop offset="0" stop-color="#0f2238"/><stop offset="1" stop-color="#142c44"/>
+									</linearGradient>
+								</defs>
+								<rect width="280" height="540" fill="url(#phbgWeb)"/>
+
+								<!-- Header -->
+								<rect x="0" y="60" width="280" height="60" fill="#08182a"/>
+								<g transform="translate(20, 90)">
+									<circle r="14" fill="none" stroke="#7fd1c8" stroke-width="2"/>
+									<path d="M-6,0 L-2,4 L6,-4" stroke="#7fd1c8" stroke-width="2" fill="none"/>
+								</g>
+								<text x="44" y="86" font-family="Poppins, sans-serif" font-size="11" fill="#fff" font-weight="700">Lighthouse Report</text>
+								<text x="44" y="100" font-family="Lato, sans-serif" font-size="8" fill="#7fd1c8">vashiat-sait.bg · mobile</text>
+
+								<!-- Main score circles -->
+								<g transform="translate(70, 175)">
+									<circle r="38" fill="none" stroke="#1a3a5c" stroke-width="6"/>
+									<circle r="38" fill="none" stroke="#14b8a6" stroke-width="6" stroke-dasharray="220 240" transform="rotate(-90)"/>
+									<text y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-size="22" fill="#14b8a6" font-weight="700">96</text>
+								</g>
+								<text x="70" y="235" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#7fd1c8" letter-spacing="2">PERFORMANCE</text>
+
+								<g transform="translate(210, 175)">
+									<circle r="38" fill="none" stroke="#1a3a5c" stroke-width="6"/>
+									<circle r="38" fill="none" stroke="#14b8a6" stroke-width="6" stroke-dasharray="232 240" transform="rotate(-90)"/>
+									<text y="6" text-anchor="middle" font-family="Poppins, sans-serif" font-size="22" fill="#14b8a6" font-weight="700">98</text>
+								</g>
+								<text x="210" y="235" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#7fd1c8" letter-spacing="2">SEO</text>
+
+								<!-- Metric rows -->
+								<g transform="translate(20, 270)">
+									<rect width="240" height="46" rx="8" fill="#08182a" stroke="#1a3a5c"/>
+									<text x="14" y="20" font-family="Lato, sans-serif" font-size="9" fill="#c5d6e3" letter-spacing="1">FIRST CONTENTFUL PAINT</text>
+									<text x="14" y="36" font-family="Poppins, sans-serif" font-size="14" fill="#7fd1c8" font-weight="700">0.8 s</text>
+									<g transform="translate(220, 23)">
+										<circle r="6" fill="#14b8a6"/>
+										<path d="M-3,0 L-1,2 L3,-2" stroke="#fff" stroke-width="1.5" fill="none"/>
+									</g>
+								</g>
+
+								<g transform="translate(20, 326)">
+									<rect width="240" height="46" rx="8" fill="#08182a" stroke="#1a3a5c"/>
+									<text x="14" y="20" font-family="Lato, sans-serif" font-size="9" fill="#c5d6e3" letter-spacing="1">LARGEST CONTENTFUL PAINT</text>
+									<text x="14" y="36" font-family="Poppins, sans-serif" font-size="14" fill="#7fd1c8" font-weight="700">1.4 s</text>
+									<g transform="translate(220, 23)">
+										<circle r="6" fill="#14b8a6"/>
+										<path d="M-3,0 L-1,2 L3,-2" stroke="#fff" stroke-width="1.5" fill="none"/>
+									</g>
+								</g>
+
+								<g transform="translate(20, 382)">
+									<rect width="240" height="46" rx="8" fill="#08182a" stroke="#1a3a5c"/>
+									<text x="14" y="20" font-family="Lato, sans-serif" font-size="9" fill="#c5d6e3" letter-spacing="1">CUMULATIVE LAYOUT SHIFT</text>
+									<text x="14" y="36" font-family="Poppins, sans-serif" font-size="14" fill="#7fd1c8" font-weight="700">0.02</text>
+									<g transform="translate(220, 23)">
+										<circle r="6" fill="#14b8a6"/>
+										<path d="M-3,0 L-1,2 L3,-2" stroke="#fff" stroke-width="1.5" fill="none"/>
+									</g>
+								</g>
+
+								<g transform="translate(20, 438)">
+									<rect width="240" height="46" rx="8" fill="#08182a" stroke="#1a3a5c"/>
+									<text x="14" y="20" font-family="Lato, sans-serif" font-size="9" fill="#c5d6e3" letter-spacing="1">TIME TO INTERACTIVE</text>
+									<text x="14" y="36" font-family="Poppins, sans-serif" font-size="14" fill="#7fd1c8" font-weight="700">1.2 s</text>
+									<g transform="translate(220, 23)">
+										<circle r="6" fill="#14b8a6"/>
+										<path d="M-3,0 L-1,2 L3,-2" stroke="#fff" stroke-width="1.5" fill="none"/>
+									</g>
+								</g>
+
+								<text x="140" y="510" text-anchor="middle" font-family="Lato, sans-serif" font-size="9" fill="#7fd1c8" letter-spacing="2">CORE WEB VITALS · ALL PASS</text>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- STATS ============================================== -->
+		<section class="web-stats">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-6">
+						<div class="stat-block">
+							<div class="stat-num"><span class="counter-target" data-from="0" data-to="120">120</span>+</div>
+							<div class="stat-label">Изработени сайта</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="stat-block">
+							<div class="stat-num"><span class="counter-target" data-from="0" data-to="15" data-decimal="1">1.5</span>s</div>
+							<div class="stat-label">Средно зареждане</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="stat-block">
+							<div class="stat-num"><span class="counter-target" data-from="0" data-to="98">98</span>%</div>
+							<div class="stat-label">Mobile-friendly</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-6">
+						<div class="stat-block">
+							<div class="stat-num"><span class="counter-target" data-from="0" data-to="100">100</span>%</div>
+							<div class="stat-label">Responsive</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PROCESS ============================================ -->
+		<section class="web-process">
+			<div class="container">
+				<div class="text-center mb-5">
+					<span class="section-eyebrow">Процес</span>
+					<h2 class="section-title">От идея до готов сайт — за 4 стъпки</h2>
+					<p class="section-lead">Минимум технически разговори, максимум резултат. Вие давате насока, ние правим всичко останало.</p>
+				</div>
+				<div class="row col-mb-30">
+					<div class="col-lg-3 col-md-6">
+						<div class="process-step">
+							<div class="step-num">1</div>
+							<h4>Брийф &amp; анализ</h4>
+							<p>Кратък разговор: какво прави бизнесът ви, кои са клиентите ви, какво трябва да постигне сайтът. Анализираме конкуренцията.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="process-step">
+							<div class="step-num">2</div>
+							<h4>Дизайн макет</h4>
+							<p>Получавате визуален макет на началната страница до 3 дни. Одобрявате стил, цветове, шрифт — преди да започне програмирането.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="process-step">
+							<div class="step-num">3</div>
+							<h4>Разработка</h4>
+							<p>Програмираме сайта на WordPress или статичен HTML5. Оптимизираме скорост, SEO и мобилна версия още по време на разработката.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<div class="process-step">
+							<div class="step-num">4</div>
+							<h4>Тест &amp; стартиране</h4>
+							<p>Тестваме на всички устройства, настройваме хостинг, домейн и Analytics. Сайтът тръгва, обучаваме ви как да го управлявате.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- PRICING ============================================ -->
+		<section class="web-pricing">
+			<div class="container">
+				<div class="text-center mb-5">
+					<span class="section-eyebrow">Пакети &amp; цени</span>
+					<h2 class="section-title">Прозрачни цени, без скрити такси</h2>
+					<p class="section-lead">Изберете пакета, който пасва на бизнеса ви. Винаги можете да доплатите за допълнителни функции по-късно.</p>
+				</div>
+
+				<div class="row col-mb-30">
+					<div class="col-lg-4 col-md-6">
+						<div class="pricing-card">
+							<h3>Starter</h3>
+							<p class="price-desc">За малки бизнеси, които искат стилна онлайн визитка.</p>
+							<div class="price-row">
+								<span class="price-amount">200</span><span class="price-currency">евро</span>
+							</div>
+							<ul>
+								<li><i class="bi-check2"></i> Визитка сайт до 5 страници</li>
+								<li><i class="bi-check2"></i> Mobile-first responsive дизайн</li>
+								<li><i class="bi-check2"></i> Контактна форма + Google Maps</li>
+								<li><i class="bi-check2"></i> SSL сертификат</li>
+								<li><i class="bi-check2"></i> Готов за 7-10 работни дни</li>
+								<li><i class="bi-check2"></i> Помощ с хостинг &amp; домейн</li>
+							</ul>
+							<a href="contact-5-recaptcha-bs.html" class="btn-web-ghost" style="width: 100%; text-align: center;">Поръчай Starter</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="pricing-card featured">
+							<span class="badge-pop">Най-популярен</span>
+							<h3>Business</h3>
+							<p class="price-desc">За растящи бизнеси с блог, многоезичност и базов SEO.</p>
+							<div class="price-row">
+								<span class="price-amount">500</span><span class="price-currency">евро</span>
+							</div>
+							<ul>
+								<li><i class="bi-check2"></i> Всичко от Starter</li>
+								<li><i class="bi-check2"></i> Блог секция за статии и новини</li>
+								<li><i class="bi-check2"></i> Многоезичност (BG + EN)</li>
+								<li><i class="bi-check2"></i> Базов SEO пакет</li>
+								<li><i class="bi-check2"></i> WordPress админ панел</li>
+								<li><i class="bi-check2"></i> Google Analytics setup</li>
+								<li><i class="bi-check2"></i> 1 месец безплатна поддръжка</li>
+							</ul>
+							<a href="contact-5-recaptcha-bs.html" class="btn-web-primary" style="width: 100%; text-align: center;">Поръчай Business</a>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="pricing-card">
+							<h3>Pro</h3>
+							<p class="price-desc">За e-commerce и бизнеси с високи изисквания.</p>
+							<div class="price-row">
+								<span class="price-amount">950</span><span class="price-currency">евро</span>
+							</div>
+							<ul>
+								<li><i class="bi-check2"></i> Всичко от Business</li>
+								<li><i class="bi-check2"></i> E-commerce ready (WooCommerce)</li>
+								<li><i class="bi-check2"></i> Персонализиран дизайн</li>
+								<li><i class="bi-check2"></i> Speed optimization до 1s</li>
+								<li><i class="bi-check2"></i> 3 езика по избор</li>
+								<li><i class="bi-check2"></i> 3 месеца безплатна поддръжка</li>
+								<li><i class="bi-check2"></i> Обучение на екипа ви</li>
+							</ul>
+							<a href="contact-5-recaptcha-bs.html" class="btn-web-ghost" style="width: 100%; text-align: center;">Поръчай Pro</a>
+						</div>
+					</div>
+				</div>
+
+				<p style="text-align: center; margin-top: 30px; color: #4a5a72; font-size: 14px;">
+					Не сте сигурни кой пакет е за вас? <a href="contact-5-recaptcha-bs.html" style="color: #1a6fb8; font-weight: 600;">Свържете се с нас</a> — ще препоръчаме безплатно.
+				</p>
+			</div>
+		</section>
+
+		<!-- TESTIMONIALS ======================================= -->
+		<section class="web-testimonials">
+			<div class="container">
+				<div class="text-center mb-5">
+					<span class="section-eyebrow">Отзиви</span>
+					<h2 class="section-title">Малки бизнеси, които вече ни се довериха</h2>
+				</div>
+
+				<div class="row col-mb-30">
+					<div class="col-lg-4 col-md-6">
+						<div class="testimonial-card">
+							<div class="stars"><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+							<p>След като пуснахме новия сайт, обажданията се удвоиха за два месеца. Клиентите хвалят как сайтът се отваря мигновено на телефона. Цената беше изключително честна за качеството, което получих.</p>
+							<div class="t-author">
+								<div class="t-avatar">МЦ</div>
+								<div>
+									<div class="t-name">Мария Цветанова</div>
+									<div class="t-event">Собственик на салон · Пловдив</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="testimonial-card">
+							<div class="stars"><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+							<p>Като IT консултант знам какво е лош сайт. Тези момчета направиха моята визитка така, че Lighthouse score-ът е 98. Никакви скрити такси, никакви забавяния — точно както бяхме говорили в началото.</p>
+							<div class="t-author">
+								<div class="t-avatar">ПД</div>
+								<div>
+									<div class="t-name">Пламен Димитров</div>
+									<div class="t-event">IT консултант · София</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="testimonial-card">
+							<div class="stars"><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i><i class="bi-star-fill"></i></div>
+							<p>Имам ресторант на брега и резервациите вече идват директно от сайта. Менюто си го обновявам сам през WordPress панела за минути. Препоръчвам на всеки колега в бранша.</p>
+							<div class="t-author">
+								<div class="t-avatar">ВН</div>
+								<div>
+									<div class="t-name">Велизар Николов</div>
+									<div class="t-event">Ресторант · Варна</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ ================================================ -->
+		<section class="web-faq">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-9">
+						<div class="text-center mb-5">
+							<span class="section-eyebrow">Често задавани въпроси</span>
+							<h2 class="section-title">Бързи отговори на най-честите въпроси</h2>
+							<p class="section-lead">Не намирате отговор? <a href="contact-5-recaptcha-bs.html" style="color:#1a6fb8;font-weight:600;">Пишете ни</a> или вижте пълните <a href="faqs.html" style="color:#1a6fb8;font-weight:600;">FAQ</a>.</p>
+						</div>
+
+						<details class="faq-item">
+							<summary>Колко струва изработката на сайт?</summary>
+							<div class="answer">Цените ни започват от <strong>200 евро за визитка сайт</strong> до 5 страници (Starter пакет). Business пакетът с блог, многоезичност и базов SEO е <strong>500 евро</strong>, а Pro пакетът с e-commerce и speed optimization — <strong>950 евро</strong>. В цената влиза дизайн, разработка и базови настройки. Хостинг и домейн се заплащат отделно (около 30-60 евро на година общо).</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Колко време ще отнеме изработката?</summary>
+							<div class="answer">Стандартен сайт е готов за <strong>7-10 работни дни</strong>. По-сложни проекти с онлайн магазин, множество езици или персонализиран дизайн отнемат до 3 седмици. Винаги уточняваме точния срок преди старт и се придържаме към него — без неприятни изненади.</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Включен ли е хостинг и домейн?</summary>
+							<div class="answer">Хостингът и домейнът са отделна годишна такса, но ние се грижим за цялата процедура — препоръчваме надежден български или европейски хостинг и помагаме с регистрацията на домейн (.bg, .com, .eu, .net). Обикновено общата годишна цена е <strong>30-60 евро</strong>. Не плащате нищо извън това и нямате скрити такси.</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Ще е ли мобилен сайтът?</summary>
+							<div class="answer">Абсолютно. Всички наши сайтове се изработват по <strong>mobile-first принцип</strong> — първо мислим за мобилното изживяване, после за десктопа. Над 70% от посетителите ви ще са на телефон, така че сайтът трябва да изглежда перфектно там. Тестваме на iPhone, Android и таблети преди стартиране.</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Поддържате ли след стартиране?</summary>
+							<div class="answer">Да. Business пакетът включва <strong>1 месец безплатна поддръжка</strong>, а Pro пакетът — <strong>3 месеца</strong>. След това предлагаме абонаментна поддръжка от 30 евро на месец, която включва: автоматични бекъпи, обновяване на платформата, защита срещу хакерски атаки и до 1 час дребни промени по съдържанието на месец.</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Какво е WordPress и защо го предлагате?</summary>
+							<div class="answer"><strong>WordPress</strong> е най-популярната платформа за уебсайтове в света — над 40% от целия интернет работи на нея. Дава ви лесен админ панел, в който сами добавяте новини, снимки, продукти и страници, без да викате програмист за всяка промяна. Освен това има огромна екосистема от добавки за всичко — от резервации до онлайн магазин.</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Ще съм ли SEO готов?</summary>
+							<div class="answer">Да. Всички наши сайтове получават <strong>базова SEO настройка</strong> от старт — оптимизирани мета тагове, sitemap.xml, robots.txt, schema разметка, title теги, alt текстове на снимките и Google Search Console интеграция. Това е стартова основа. За по-агресивна SEO кампания (ключови думи, линк билдинг, статии) вижте отделните ни <a href="services-2-bs.html">SEO услуги</a>.</div>
+						</details>
+
+						<details class="faq-item">
+							<summary>Може ли по-късно да добавим онлайн магазин?</summary>
+							<div class="answer">Разбира се. Pro пакетът идва вече <strong>e-commerce ready</strong>. Ако започнете със Starter или Business и след време решите да продавате онлайн, можем по всяко време да добавим WooCommerce магазин — с продукти, варианти, кошница, плащане с карта и доставка. Цената на надстройката зависи от обема, но започва от 250 евро.</div>
+						</details>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA BANNER ========================================= -->
+		<section class="web-cta-banner">
+			<div class="container">
+				<h2>Готови ли сте за нов сайт?</h2>
+				<p>15 минути разговор. 7-10 дни до готов сайт. Цял живот клиенти, които ви намират в Google.</p>
+				<div class="hero-cta" style="justify-content: center; display: flex; gap: 14px; flex-wrap: wrap;">
+					<a href="contact-5-recaptcha-bs.html" class="btn-web-primary">Безплатна консултация</a>
+					<a href="tel:+359895245290" class="btn-web-ghost">Обадете се: 0895 245 290</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- INTERNAL LINKS section (extra SEO juice + helpful) === -->
+		<section style="padding: 60px 0; background: #f7fafc; border-top: 1px solid #e3edf3;">
+			<div class="container text-center">
+				<h3 style="font-family: 'Playfair Display', serif; font-size: 24px; color: #142c44; margin-bottom: 18px;">Разгледайте още</h3>
+				<p style="color: #4a5a72; max-width: 700px; margin: 0 auto 30px;">Уебсайтът е само едно от нещата, които правим. Ако ви трябва пълно онлайн присъствие за вашия бизнес:</p>
+				<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
+					<a href="index.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Начало</a>
+					<a href="about-bs.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">За Нас</a>
+					<a href="services-2-bs.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Уеб услуги &amp; SEO</a>
+					<a href="rs-demo-particles-effects.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Дизайн портфолио</a>
+					<a href="svatbeni-pokani-bs.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Сватбени покани</a>
+					<a href="logo-dizayn-bs.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Лого дизайн</a>
+					<a href="index.html#proektite-homepage" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Нашите проекти</a>
+					<a href="blog.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Блог</a>
+					<a href="faqs.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Често задавани въпроси</a>
+					<a href="contact-5-recaptcha-bs.html" style="padding: 10px 20px; background: #fff; border: 1px solid #d8e4ec; border-radius: 999px; color: #142c44; font-weight: 500; font-size: 14px;">Контакти</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+
+				<div class="footer-widgets-wrap">
+					<div class="row col-mb-50">
+						<div class="col-lg-8">
+							<div class="row col-mb-50">
+								<div class="col-md-4">
+									<div class="widget">
+										<img src="images/bs/bs-logo-better-smaller.webp" alt="Bulgar Solution" class="footer-logo">
+										<p>Ние вярваме в <strong>свежите идеи</strong>, <strong>креативността</strong> и <strong>гъвкавите практически решения</strong> за вашия уебсайт.</p>
+										<div style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
+											<address>
+												<strong>Офис:</strong><br>
+												град Варна, <br>
+												ул. Прилеп /9003/<br>
+											</address>
+											<abbr title="Phone Number"><strong>Телефон:</strong></abbr> <a href="tel:+359895245290">+359 89 524 5290</a><br>
+											<abbr title="Email Address"><strong>Email:</strong></abbr> <a href="mailto:bulgarsolution@gmail.com">bulgarsolution@gmail.com</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="widget widget_links">
+										<h4>Полезни Ресурси</h4>
+										<ul>
+											<li><a href="services-2-bs.html">Услуги</a></li>
+											<li><a href="index.html#proektite-homepage">Нашите Проекти</a></li>
+											<li><a href="rs-demo-particles-effects.html">Дизайн портфолио</a></li>
+											<li><a href="svatbeni-pokani-bs.html">Сватбени покани</a></li>
+											<li><a href="faqs.html">Често Задавани Въпроси</a></li>
+											<li><a href="blog.html">Блог</a></li>
+											<li><a href="contact-5-recaptcha-bs.html">Контакти</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-md-4">
+									<div class="widget">
+										<h4>Последни публикации</h4>
+										<div class="posts-sm row col-mb-30" id="post-list-footer">
+											<div class="entry col-12">
+												<div class="grid-inner row">
+													<div class="col">
+														<div class="entry-title"><h4><a href="#">Как да оптимизирате сайта си за по-добри резултати в Google</a></h4></div>
+														<div class="entry-meta"><ul><li>7 януари 2025</li></ul></div>
+													</div>
+												</div>
+											</div>
+											<div class="entry col-12">
+												<div class="grid-inner row">
+													<div class="col">
+														<div class="entry-title"><h4><a href="#">5 важни стъпки при създаване на успешен уебсайт</a></h4></div>
+														<div class="entry-meta"><ul><li>5 януари 2025</li></ul></div>
+													</div>
+												</div>
+											</div>
+											<div class="entry col-12">
+												<div class="grid-inner row">
+													<div class="col">
+														<div class="entry-title"><h4><a href="#">Защо SEO е основата на всеки успешен бизнес онлайн</a></h4></div>
+														<div class="entry-meta"><ul><li>3 януари 2025</li></ul></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4">
+							<div class="row col-mb-50">
+								<div class="col-md-4 col-lg-12">
+									<div class="widget">
+										<div class="row col-mb-30">
+											<div class="col-lg-6">
+												<div class="counter counter-small"><span data-from="50" data-to="120" data-refresh-interval="80" data-speed="3000" data-comma="true"></span></div>
+												<h5 class="mb-0">Изработени Уебсайтове</h5>
+											</div>
+											<div class="col-lg-6">
+												<div class="counter counter-small"><span data-from="100" data-to="350" data-refresh-interval="50" data-speed="2000" data-comma="true"></span></div>
+												<h5 class="mb-0">Удовлетворени Клиенти</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-5 col-lg-12">
+									<div class="widget subscribe-widget">
+										<h5><strong>Запишете се</strong> за нашия бюлетин и получавайте периодични безплатни съвети и намаления</h5>
+										<div class="widget-subscribe-form-result"></div>
+										<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
+											<div class="input-group mx-auto">
+												<div class="input-group-text"><i class="bi-envelope-plus"></i></div>
+												<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Въведи твоя Email">
+												<button class="btn btn-success" type="submit">Записване</button>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<div class="col-md-3 col-lg-12">
+									<div class="widget">
+										<div class="row col-mb-30">
+											<div class="col-6 col-md-12 col-lg-6 d-flex align-items-center">
+												<a href="https://www.facebook.com/bulgarsolution" class="social-icon text-white border-transparent bg-facebook me-2 mb-0 float-none">
+													<i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-facebook-f"></i>
+												</a>
+												<a href="https://www.facebook.com/bulgarsolution" class="ms-1"><small class="d-block"><strong>Харесайте ни</strong><br>във Facebook</small></a>
+											</div>
+											<div class="col-6 col-md-12 col-lg-6 d-flex align-items-center">
+												<a href="#" class="social-icon text-white border-transparent bg-rss me-2 mb-0 float-none">
+													<i class="fa-solid fa-rss"></i><i class="fa-solid fa-rss"></i>
+												</a>
+												<a href="#" class="ms-1"><small class="d-block"><strong>Запишете се</strong><br>към нашият RSS Фийд</small></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="copyrights">
+				<div class="container">
+					<div class="row col-mb-30">
+						<div class="col-md-6 text-center text-md-start">
+							Копирайт &copy; 2026 Всички права запазени от Bulgar Solution.<br>
+							<div class="copyright-links"><a href="#">Политика за поверителност</a> / <a href="#">Условия за ползване</a></div>
+						</div>
+						<div class="col-md-6 text-center text-md-end">
+							<div class="d-flex justify-content-center justify-content-md-end mb-2">
+								<a href="https://www.facebook.com/bulgarsolution" class="social-icon border-transparent si-small h-bg-facebook"><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="#" class="social-icon border-transparent si-small h-bg-twitter"><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-twitter"></i></a>
+								<a href="#" class="social-icon border-transparent si-small h-bg-google"><i class="fa-brands fa-google"></i><i class="fa-brands fa-google"></i></a>
+								<a href="#" class="social-icon border-transparent si-small h-bg-pinterest"><i class="fa-brands fa-pinterest-p"></i><i class="fa-brands fa-pinterest-p"></i></a>
+								<a href="https://t.me/BulgarSolution" class="social-icon border-transparent si-small h-bg-vimeo"><i class="fa-brands fa-telegram"></i><i class="fa-brands fa-telegram"></i></a>
+								<a href="viber://add?number=359895245290" class="social-icon border-transparent si-small h-bg-vimeo"><i class="fa-brands fa-viber"></i><i class="fa-brands fa-viber"></i></a>
+								<a href="#" class="social-icon border-transparent si-small h-bg-github"><i class="fa-brands fa-github"></i><i class="fa-brands fa-github"></i></a>
+								<a href="#" class="social-icon border-transparent si-small h-bg-yahoo"><i class="fa-brands fa-yahoo"></i><i class="fa-brands fa-yahoo"></i></a>
+								<a href="#" class="social-icon border-transparent si-small me-0 h-bg-linkedin"><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-linkedin"></i></a>
+							</div>
+							<i class="bi-envelope"></i> <a href="mailto:bulgarsolution@gmail.com">bulgarsolution@gmail.com</a> <span class="middot">&middot;</span> <i class="fa-solid fa-phone"></i> <a href="tel:+359895245290">+359-895-245-290</a> <span class="middot">&middot;</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts ============================================ -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<script>
+	jQuery(document).ready(function($) {
+		// Footer counter animation (Canvas template pattern)
+		$('.counter span').each(function() {
+			var $this = $(this), countTo = $this.attr('data-to');
+			$({ countNum: $this.text() }).animate(
+				{ countNum: countTo },
+				{
+					duration: parseInt($this.attr('data-speed')),
+					easing: 'swing',
+					step: function() { $this.text(Math.floor(this.countNum)); },
+					complete: function() { $this.text(this.countNum); }
+				}
+			);
+		});
+
+		// Stats counter — animate when scrolled into view (IntersectionObserver)
+		var statTargets = document.querySelectorAll('.counter-target');
+		if ('IntersectionObserver' in window && statTargets.length) {
+			var io = new IntersectionObserver(function(entries) {
+				entries.forEach(function(entry) {
+					if (!entry.isIntersecting || entry.target.dataset.run) return;
+					entry.target.dataset.run = '1';
+					var el = entry.target,
+					    to = parseInt(el.dataset.to, 10),
+					    from = parseInt(el.dataset.from, 10) || 0,
+					    decimal = el.dataset.decimal ? parseInt(el.dataset.decimal, 10) : 0,
+					    dur = 1800,
+					    start = performance.now();
+					function step(ts) {
+						var p = Math.min(1, (ts - start) / dur);
+						p = 1 - Math.pow(1 - p, 3); // ease-out cubic
+						var v = from + (to - from) * p;
+						if (decimal > 0) {
+							el.textContent = (v / Math.pow(10, decimal)).toFixed(decimal);
+						} else {
+							el.textContent = Math.round(v);
+						}
+						if (p < 1) requestAnimationFrame(step);
+					}
+					requestAnimationFrame(step);
+				});
+			}, { threshold: 0.4 });
+			statTargets.forEach(function(t) { io.observe(t); });
+		}
+	});
+	</script>
+
+</body>
+</html>
